@@ -25,7 +25,7 @@ npx install-peerdeps eslint-plugin-nimbus-clean
 
 ## Usage
 
-Add `eslint-nimbus-clean` to the extends or plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+Add `nimbus-clean` to the extends or plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
 ```json
 {
