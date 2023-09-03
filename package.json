@@ -1,0 +1,136 @@
+{
+  "name": "eslint-plugin-nimbus-clean",
+  "version": "0.0.0",
+  "description": "A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "eslintconfig",
+    "eslint-config",
+    "react",
+    "typescript"
+  ],
+  "author": "dipiash",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "exports": "./dist/index.js",
+  "files": [
+    "/dist",
+    "README.md",
+    "package.json"
+  ],
+  "scripts": {
+    "init": "rm -rf dist node_modules && npm i",
+    "build": "rm -rf ./dist && mkdir ./dist && cp -r ./lib/* ./dist",
+    "pack": "npm pack --pack-destination=./dist",
+    "lint": "npm-run-all \"lint:*\"",
+    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
+    "lint:js": "eslint . --ext .js,.ts",
+    "lint:syncpack": "syncpack list-mismatches",
+    "lint:syncpack:fix": "syncpack fix-mismatches",
+    "update:eslint-docs": "eslint-doc-generator",
+    "commit": "cz",
+    "release:prod": "dotenv release-it -- -VV",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@release-it/bumper": "^5.1.0",
+    "@release-it/conventional-changelog": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.0",
+    "commitizen": "^4.3.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "cz-git": "^1.7.1",
+    "eslint": "^8.47.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-doc-generator": "^1.4.3",
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-plugin-eslint-plugin": "^5.1.1",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.20.0",
+    "eslint-plugin-testing-library": "^6.0.0",
+    "eslint-plugin-unicorn": "^48.0.1",
+    "husky": "^8.0.3",
+    "npm-run-all": "^4.1.5",
+    "release-it": "^16.1.5",
+    "syncpack": "^11.2.1"
+  },
+  "engines": {
+    "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.3.0",
+    "eslint": ">=8",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-import-resolver-typescript": "^3.6.0",
+    "eslint-plugin-import": "^2.28.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.33.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-sonarjs": "^0.20.0",
+    "eslint-plugin-testing-library": "^5.11.1",
+    "eslint-plugin-unicorn": "^48.0.1"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": false
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": false
+    },
+    "@typescript-eslint/parser": {
+      "optional": false
+    },
+    "eslint-config-prettier": {
+      "optional": false
+    },
+    "eslint-import-resolver-typescript": {
+      "optional": false
+    },
+    "eslint-plugin-import": {
+      "optional": false
+    },
+    "eslint-plugin-jsx-a11y": {
+      "optional": false
+    },
+    "eslint-plugin-prettier": {
+      "optional": false
+    },
+    "eslint-plugin-promise": {
+      "optional": false
+    },
+    "eslint-plugin-react": {
+      "optional": false
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": false
+    },
+    "eslint-plugin-simple-import-sort": {
+      "optional": false
+    },
+    "eslint-plugin-sonarjs": {
+      "optional": false
+    },
+    "eslint-plugin-storybook": {
+      "optional": false
+    },
+    "eslint-plugin-testing-library": {
+      "optional": false
+    },
+    "eslint-plugin-unicorn": {
+      "optional": false
+    }
+  }
+}
