@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.1.1...v0.1.2) (2023-09-03)
+
+
+### Bug Fixes
+
+* :bug: remove packages dependacies ([9db955c](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/9db955c8efc6af63249fe24bdb188912b3f29cc4))
+
 ## [0.1.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.1.0...v0.1.1) (2023-09-03)
 
 
