@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 20
       - uses: nrwl/nx-set-shas@v3
-      - run: npm install
+      - run: npm ci
 
       - run: npm run lint:js
       - run: npm run lint:syncpack
