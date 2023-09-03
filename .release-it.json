@@ -56,7 +56,8 @@
     "requireCleanWorkingDir": false
   },
   "npm": {
-    "publish": true
+    "publish": true,
+    "allowSameVersion": true
   },
   "github": {
     "release": true,
