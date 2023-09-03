@@ -31,7 +31,7 @@
     "lint:syncpack:fix": "syncpack fix-mismatches",
     "update:eslint-docs": "eslint-doc-generator",
     "commit": "cz",
-    "release:prod": "dotenv release-it -- -VV",
+    "release:prod": "npm run build && dotenv release-it -- -VV",
     "prepare": "husky install"
   },
   "devDependencies": {
