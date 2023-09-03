@@ -134,6 +134,7 @@
     }
   },
   "dependencies": {
-    "dotenv": "16.3.1"
+    "dotenv": "16.3.1",
+    "dotenv-cli": "7.3.0"
   }
 }
