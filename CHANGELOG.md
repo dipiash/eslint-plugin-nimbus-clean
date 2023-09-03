@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.1.0...v0.1.1) (2023-09-03)
+
+
+### Bug Fixes
+
+* :bug: disable `import/no-unassigned-import` ([248a9ac](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/248a9acbe2d90df407d3d7e393960cd7eecdc7be))
+
 ## 0.1.0 (2023-09-03)
 
 
