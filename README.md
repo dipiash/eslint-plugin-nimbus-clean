@@ -1,3 +1,7 @@
+![GitHub CI](https://github.com/dipiash/eslint-plugin-nimbus-clean/actions/workflows/ci.yml/badge.svg)
+[![npm version](https://badge.fury.io/js/eslint-plugin-nimbus-clean.svg)](https://badge.fury.io/js/eslint-plugin-nimbus-clean)
+[![HitCount](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean.svg)](https://hits.dwyl.com/{username}/{project-name})
+
 # eslint-plugin-nimbus-clean
 
 A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!
