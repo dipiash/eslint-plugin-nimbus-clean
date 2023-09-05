@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.2.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.1.3...v0.2.0) (2023-09-05)
+
+
+### Features
+
+* :sparkles: add `eslint-plugin-perfectionist` ([3887566](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/388756652ec815418cf8261b60c647e001585ce4))
+
+
+### Bug Fixes
+
+* :bug: [unicorn] exclude `i18n-config.ts` from filename-case rule ([e615030](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/e615030894d16ffdd1895b8fb8c63f667e0dd619))
+
+## [0.1.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.1.2...v0.1.3) (2023-09-03)
+
 ## [0.1.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.1.1...v0.1.2) (2023-09-03)
 
 
