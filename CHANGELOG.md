@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.0...v0.2.1) (2023-09-05)
+
+
+### Documentations
+
+* :memo: add badges in README.md ([93a1d11](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/93a1d11facb0aca0354062cb9d2fec908635eae2))
+* :memo: add bagend in README.md ([129c9ab](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/129c9ab9d307d37c6d86625ae2157a51f6294c40))
+
 ## [0.2.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.1.3...v0.2.0) (2023-09-05)
 
 
