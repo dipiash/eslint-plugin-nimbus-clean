@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.1...v0.2.2) (2023-09-06)
+
+
+### Documentations
+
+* :memo: add `Table of Contents` section into readme ([34e417d](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/34e417dd9f682b3ef18cf507f50d2a89f5f261f2))
+
 ## [0.2.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.0...v0.2.1) (2023-09-05)
 
 
