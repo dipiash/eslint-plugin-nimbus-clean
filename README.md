@@ -1,5 +1,5 @@
 ![GitHub CI](https://github.com/dipiash/eslint-plugin-nimbus-clean/actions/workflows/ci.yml/badge.svg)
-[![npm version](https://badge.fury.io/js/eslint-plugin-nimbus-clean.svg)](https://badge.fury.io/js/eslint-plugin-nimbus-clean)
+[![npm version](https://badge.fury.io/js/eslint-plugin-nimbus-clean.svg?v=0.2.4)](https://badge.fury.io/js/eslint-plugin-nimbus-clean)
 [![HitCount](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean.svg?style=flat-square)](http://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean)
 
 # eslint-plugin-nimbus-clean
