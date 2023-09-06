@@ -1,12 +1,21 @@
 ![GitHub CI](https://github.com/dipiash/eslint-plugin-nimbus-clean/actions/workflows/ci.yml/badge.svg)
 [![npm version](https://badge.fury.io/js/eslint-plugin-nimbus-clean.svg)](https://badge.fury.io/js/eslint-plugin-nimbus-clean)
-[![HitCount](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean.svg)](https://hits.dwyl.com/{username}/{project-name})
+[![HitCount](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean.svg)](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean)
 
 # eslint-plugin-nimbus-clean
 
 A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!
 
-## Installation
+## Table of Contents
+
+<!-- toc -->
+
+- [Installation](#installation)
+- [Usage](#usage)
+
+<!-- tocstop -->
+
+### Installation
 
 You'll first need to install [ESLint](https://eslint.org/):
 
@@ -27,7 +36,7 @@ Next, install all peerDependencies for this plugin:
 npx install-peerdeps eslint-plugin-nimbus-clean
 ```
 
-## Usage
+### Usage
 
 Add `nimbus-clean` to the extends or plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
 
