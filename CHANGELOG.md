@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.3...v0.2.4) (2023-09-06)
+
+
+### Documentations
+
+* :memo: revert NPM badge ([a94b418](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/a94b4181a201a66dd52631cb734ca325223c109e))
+
 ## [0.2.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.2...v0.2.3) (2023-09-06)
 
 
