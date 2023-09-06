@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.2...v0.2.3) (2023-09-06)
+
+
+### Documentations
+
+* :memo: fix badges for: npm and hit counter ([7cef2e4](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/7cef2e4c55a576afb5ce997fd4be525c8a4fdaa0))
+
 ## [0.2.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.1...v0.2.2) (2023-09-06)
 
 
