@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.5](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.4...v0.2.5) (2023-09-15)
+
+
+### Bug Fixes
+
+* :bug: fix setup without prettier. Updated readme ([59d1c51](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/59d1c518188481792da774fff306b3b144594398))
+
 ## [0.2.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.3...v0.2.4) (2023-09-06)
 
 
