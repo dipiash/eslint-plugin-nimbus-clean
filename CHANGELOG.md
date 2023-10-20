@@ -2,6 +2,10 @@
 
 ## [0.2.6](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.5...v0.2.6) (2023-10-20)
 
+### Build
+
+* :package: update packages for release flow ([4874a39](https://github.com/dipiash/eslint-plugin-nimbus-clean/tree/4874a39c307ebb61a1fc8168b41e083aabe51187))
+
 ## [0.2.5](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.4...v0.2.5) (2023-09-15)
 
 
