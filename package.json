@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nimbus-clean",
-  "version": "0.2.6",
+  "version": "1.0.0",
   "description": "A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!",
   "keywords": [
     "eslint",

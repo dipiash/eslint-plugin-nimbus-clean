@@ -1,5 +1,16 @@
 # Changelog
 
+## [1.0.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.6...v1.0.0) (2023-10-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* Custom settings for `eslint-plugin-perfectionist` can catch the errors. [See more](https://github.com/azat-io/eslint-plugin-perfectionist/blob/main/changelog.md#%EF%B8%8F-breaking-changes)
+
+### Features
+
+* :sparkles: updated eslint-plugin-perfectionist to latest version 2.2.0 ([e270143](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/e270143d1ddd14ff2aa1188fa542d9d75ffea4b3)), closes [#12](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/12)
+
 ## [0.2.6](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.5...v0.2.6) (2023-10-20)
 
 ### Build
