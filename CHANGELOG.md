@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.0.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.0...v1.0.1) (2023-10-26)
+
+
+### Bug Fixes
+
+* update eslint-plugin-sonarjs to latest version 0.21.0 ([6cbf2ff](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/6cbf2fffa8696d8e1a08648439fb9fdc5c35170f))
+* update package-lock.json ([9b45b56](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/9b45b562526a28994875be5711f0a024dea196b8))
+
 ## [1.0.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v0.2.6...v1.0.0) (2023-10-24)
 
 
