@@ -22,18 +22,25 @@ You'll first need to install [ESLint](https://eslint.org/):
 ```sh
 npm i eslint --save-dev
 npm i typescript
+# Or run this to use yarn
+yarn add eslint --dev
+yarn add typescript
 ```
 
 Next, install `eslint-plugin-nimbus-clean`:
 
 ```sh
 npm install eslint-plugin-nimbus-clean --save-dev
+# Or run this to use yarn
+yarn add eslint-plugin-nimbus-clean --dev
 ```
 
 Next, install all peerDependencies for this plugin:
 
 ```sh
 npx install-peerdeps eslint-plugin-nimbus-clean
+# Or run this to use yarn
+npx install-peerdeps eslint-plugin-nimbus-clean --yarn
 ```
 
 ### Usage
