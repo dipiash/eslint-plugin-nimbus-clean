@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nimbus-clean",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!",
   "keywords": [
     "eslint",
@@ -62,7 +62,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-sonarjs": "^0.20.0",
+    "eslint-plugin-sonarjs": "^0.21.0",
     "eslint-plugin-testing-library": "^6.0.0",
     "eslint-plugin-unicorn": "^48.0.1",
     "husky": "8.0.3",
@@ -88,7 +88,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-simple-import-sort": "^10.0.0",
-    "eslint-plugin-sonarjs": "^0.20.0",
+    "eslint-plugin-sonarjs": "^0.21.0",
     "eslint-plugin-testing-library": "^6.0.0",
     "eslint-plugin-unicorn": "^48.0.1",
     "prettier": "^3.0.3"
