@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.1...v1.0.2) (2023-10-27)
+
+
+### Documentations
+
+* add instructions for yarn ([73e54ab](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/73e54ab2c7a5065123de94da8733a6561064c1b0))
+
 ## [1.0.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.0...v1.0.1) (2023-10-26)
 
 
