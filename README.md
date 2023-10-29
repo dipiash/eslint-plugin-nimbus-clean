@@ -141,3 +141,13 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 
 2. If you don't have a `.prettierrc` config, please add it
 
+```prettier
+{
+  "singleQuote": true,
+  "printWidth": 150,
+  "useTabs": false,
+  "tabWidth": 2,
+  "trailingComma": "all",
+  "semi": false
+}
+```
