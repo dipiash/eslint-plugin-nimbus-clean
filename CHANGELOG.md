@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.3...v1.0.4) (2023-10-29)
+
+
+### Documentations
+
+* **readme:** add link to contributing.md ([476ed2c](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/476ed2c5a5124473f8bb9e7d441ba2f1da8ad0cf))
+
 ## [1.0.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.2...v1.0.3) (2023-10-28)
 
 ### Documentations
