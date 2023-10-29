@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.0.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.2...v1.0.3) (2023-10-28)
+
+### Documentations
+
+* add license section into readme file ([07fdb90](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/07fdb90c0b1140719e99b00fdd3fc039dd2b4a2d))
+
 ## [1.0.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.1...v1.0.2) (2023-10-27)
 
 
