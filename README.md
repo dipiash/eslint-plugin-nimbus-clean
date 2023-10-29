@@ -11,16 +11,16 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
 <!-- toc -->
 
 - [Installation](#installation)
-  - [Using npm](#using-npm)
-  - [Using yarn](#using-yarn)
-  - [Using pnpm](#using-pnpm)
+  - [Via npm](#via-npm)
+  - [Via yarn](#via-yarn)
+  - [Via pnpm](#via-pnpm)
 - [Usage](#usage)
 
 <!-- tocstop -->
 
 ### Installation
 
-#### Using npm
+#### Via npm
 
 You'll first need to install [ESLint](https://eslint.org/):
 
@@ -41,7 +41,7 @@ Next, install all peerDependencies for this plugin:
 npx install-peerdeps eslint-plugin-nimbus-clean
 ```
 
-#### Using yarn
+#### Via yarn
 
 If you prefer using yarn, you can follow these steps:
 
@@ -64,7 +64,7 @@ Next, install all peerDependencies for this plugin:
 npx install-peerdeps eslint-plugin-nimbus-clean --yarn
 ```
 
-#### Using pnpm
+#### Via pnpm
 
 To use `pnpm` instead of `npm` for managing your project's dependencies, follow these steps:
 
