@@ -13,6 +13,7 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
+- [Contributions](#contributions)
 
 <!-- tocstop -->
 
@@ -100,3 +101,6 @@ npx install-peerdeps eslint-plugin-nimbus-clean --yarn
 ### License
 This code is licensed under the MIT License. 
 You can find the license file [here](/LICENSE).
+
+### Contributions
+Before making any contributions, refer to [here](/CONTRIBUTING).
