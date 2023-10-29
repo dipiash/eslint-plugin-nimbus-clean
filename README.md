@@ -15,6 +15,8 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
   - [Via yarn](#via-yarn)
   - [Via pnpm](#via-pnpm)
 - [Usage](#usage)
+- [License](#license)
+- [Contributions](#contributions)
 
 <!-- tocstop -->
 
@@ -100,29 +102,42 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 ### Usage
 
 1. Add `nimbus-clean` to the extends or plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+   ```json
+   {
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 13,
+        "sourceType": "module",
+        "ecmaFeatures": {
+          "jsx": true,
+          "modules": true,
+          "experimentalObjectRestSpread": true
+        }
+      },
+      "ignorePatterns": [
+        "**/*",
+        "node_modules"
+      ],
+      "settings": {
+        "react": {
+          "pragma": "React",
+          "fragment": "Fragment",
+          "version": "detect"
+        },
+        "import/resolver": {
+          "typescript": {
+            "alwaysTryTypes": true
+          }
+        }
+      },
+      "extends": [
+        "plugin:nimbus-clean/recommended"
+      ],
+      "plugins": [
+        "nimbus-clean"
+      ]
+   }
+   ```
 
-```json
-{
-  "parser": "@typescript-eslint/parser",
-  // ... (rest of your config)
-  "extends": [
-    "plugin:nimbus-clean/recommended"
-  ],
-  "plugins": [
-    "nimbus-clean"
-  ]
-}
-```
+2. If you don't have a `.prettierrc` config, please add it
 
-2. If you don't have a .prettierrc config, please add it:
-
-```prettier
-{
-  "singleQuote": true,
-  "printWidth": 150,
-  "useTabs": false,
-  "tabWidth": 2,
-  "trailingComma": "all",
-  "semi": false
-}
-```
