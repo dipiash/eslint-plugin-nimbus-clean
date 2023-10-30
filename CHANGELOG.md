@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.6](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.5...v1.0.6) (2023-10-30)
+
+
+### Bug Fixes
+
+* **release-it:** :bug: fix `tgz` assets version in release changelog ([658be5a](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/658be5a4f52931f26031d1baf3ccbaf51fe3256b))
+
 ## [1.0.5](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.4...v1.0.5) (2023-10-30)
 
 
