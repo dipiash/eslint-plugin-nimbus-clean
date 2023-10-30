@@ -11,9 +11,9 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
 <!-- toc -->
 
 - [Installation](#installation)
-  - [Via npm](#via-npm)
-  - [Via yarn](#via-yarn)
-  - [Via pnpm](#via-pnpm)
+  * [Via npm](#via-npm)
+  * [Via yarn](#via-yarn)
+  * [Via pnpm](#via-pnpm)
 - [Usage](#usage)
 - [License](#license)
 - [Contributions](#contributions)
@@ -22,9 +22,11 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
 
 ### Installation
 
+Here you can find instructions how to install it via: `npm`, `yarn`, `pnpm`.
+
 #### Via npm
 
-You'll first need to install [ESLint](https://eslint.org/):
+You'll first need to install [ESLint](https://eslint.org/) and TypeScript:
 
 ```sh
 npm i eslint --save-dev
@@ -43,34 +45,40 @@ Next, install all peerDependencies for this plugin:
 npx install-peerdeps eslint-plugin-nimbus-clean
 ```
 
+Next refer to [Usage](#usage) section.
+
 #### Via yarn
 
-If you prefer using yarn, you can follow these steps:
+Install `yarn` globally if you haven't already:
 
-You'll first need to install [ESLint](https://eslint.org/):
+```sh
+npm install -g yarn
+```
+
+Next install [ESLint](https://eslint.org/) and TypeScript:
 
 ```sh
 yarn add eslint --dev
 yarn add typescript
 ```
 
-Next, install `eslint-plugin-nimbus-clean`:
+Next install `eslint-plugin-nimbus-clean`:
 
 ```sh
 yarn add eslint-plugin-nimbus-clean --dev
 ```
 
-Next, install all peerDependencies for this plugin:
+Next install all peerDependencies for this plugin:
 
 ```sh
 npx install-peerdeps eslint-plugin-nimbus-clean --yarn
 ```
 
+Next refer to [Usage](#usage) section.
+
 #### Via pnpm
 
-To use `pnpm` instead of `npm` for managing your project's dependencies, follow these steps:
-
-1. Install `pnpm` globally if you haven't already:
+Install `pnpm` globally if you haven't already:
 
 ```sh
 npm install -g pnpm
@@ -78,26 +86,26 @@ npm install -g pnpm
 yarn global add pnpm
 ```
 
-2. Instead of using `npm` for package management, you can use `pnpm` by replacing the `npm` commands with `pnpm` in the installation and usage sections:
-
-Use `pnpm` for installing ESLint and TypeScript:
+Next install [ESLint](https://eslint.org/) and TypeScript:
 
 ```sh
 pnpm add eslint --save-dev
 pnpm add typescript
 ```
 
-Install `eslint-plugin-nimbus-clean` with `pnpm`:
+Next, install `eslint-plugin-nimbus-clean`:
 
 ```sh
 pnpm add eslint-plugin-nimbus-clean --save-dev
 ```
 
-Install peer dependencies with `pnpm`:
+Next install all peerDependencies for this plugin:
 
 ```sh
 npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 ```
+
+Next refer to [Usage](#usage) section.
 
 ### Usage
 
@@ -140,20 +148,21 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
    ```
 
 2. If you don't have a `.prettierrc` config, please add it
+   ```prettier
+   {
+      "singleQuote": true,
+      "printWidth": 150,
+      "useTabs": false,
+      "tabWidth": 2,
+      "trailingComma": "all",
+      "semi": false
+    }
+   ```
 
-```prettier
-{
-  "singleQuote": true,
-  "printWidth": 150,
-  "useTabs": false,
-  "tabWidth": 2,
-  "trailingComma": "all",
-  "semi": false
-}
-```
 ### License
-This code is licensed under the MIT License. 
-You can find the license file [here](/LICENSE).
+
+This code is licensed under the [MIT](/LICENSE) License.
 
 ### Contributions
+
 Before making any contributions, refer to [here](/CONTRIBUTING).
