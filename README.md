@@ -154,3 +154,6 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 ### License
 This code is licensed under the MIT License. 
 You can find the license file [here](/LICENSE).
+
+### Contributions
+Before making any contributions, refer to [here](/CONTRIBUTING).
