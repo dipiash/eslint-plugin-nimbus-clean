@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.5](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.4...v1.0.5) (2023-10-30)
+
+
+### Documentations
+
+* **readme:** :memo: make changes in README.md file ([73635ff](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/73635ffeca72d7b788b5c084d83170199225c843))
+
 ## [1.0.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.3...v1.0.4) (2023-10-29)
 
 
