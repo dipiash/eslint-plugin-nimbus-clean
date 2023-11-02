@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.7](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.6...v1.0.7) (2023-11-02)
+
+
+### Documentations
+
+* **readme:** :memo: shortened the description about installation process ([f8f8262](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/f8f82620f2a6d38baf6f94746c33bcd24b292b16))
+
 ## [1.0.6](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.5...v1.0.6) (2023-10-30)
 
 
