@@ -11,9 +11,6 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
 <!-- toc -->
 
 - [Installation](#installation)
-  * [Via npm](#via-npm)
-  * [Via yarn](#via-yarn)
-  * [Via pnpm](#via-pnpm)
 - [Usage](#usage)
 - [License](#license)
 - [Contributions](#contributions)
@@ -24,71 +21,17 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
 
 Here you can find instructions how to install it via: `npm`, `yarn`, `pnpm`.
 
-#### Via npm
-
 You'll first need to install [ESLint](https://eslint.org/) and TypeScript:
 
 ```sh
 npm i eslint --save-dev
 npm i typescript
-```
 
-Next, install `eslint-plugin-nimbus-clean`:
-
-```sh
-npm install eslint-plugin-nimbus-clean --save-dev
-```
-
-Next, install all peerDependencies for this plugin:
-
-```sh
-npx install-peerdeps eslint-plugin-nimbus-clean
-```
-
-Next refer to [Usage](#usage) section.
-
-#### Via yarn
-
-Install `yarn` globally if you haven't already:
-
-```sh
-npm install -g yarn
-```
-
-Next install [ESLint](https://eslint.org/) and TypeScript:
-
-```sh
+# Or run this to use yarn
 yarn add eslint --dev
 yarn add typescript
-```
 
-Next install `eslint-plugin-nimbus-clean`:
-
-```sh
-yarn add eslint-plugin-nimbus-clean --dev
-```
-
-Next install all peerDependencies for this plugin:
-
-```sh
-npx install-peerdeps eslint-plugin-nimbus-clean --yarn
-```
-
-Next refer to [Usage](#usage) section.
-
-#### Via pnpm
-
-Install `pnpm` globally if you haven't already:
-
-```sh
-npm install -g pnpm
-# Or using yarn
-yarn global add pnpm
-```
-
-Next install [ESLint](https://eslint.org/) and TypeScript:
-
-```sh
+# Or run this to use pnpm
 pnpm add eslint --save-dev
 pnpm add typescript
 ```
@@ -96,16 +39,26 @@ pnpm add typescript
 Next, install `eslint-plugin-nimbus-clean`:
 
 ```sh
+npm install eslint-plugin-nimbus-clean --save-dev
+
+# Or run this to use yarn
+yarn add eslint-plugin-nimbus-clean --dev
+
+# Or run this to use pnpm
 pnpm add eslint-plugin-nimbus-clean --save-dev
 ```
 
-Next install all peerDependencies for this plugin:
+Next, install all peerDependencies for this plugin:
 
 ```sh
+npx install-peerdeps eslint-plugin-nimbus-clean
+
+# Or run this to use yarn
+npx install-peerdeps eslint-plugin-nimbus-clean --yarn
+
+# Or run this to use pnpm
 npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 ```
-
-Next refer to [Usage](#usage) section.
 
 ### Usage
 
