@@ -62,45 +62,79 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 
 ### Usage
 
-1. Add `nimbus-clean` to the extends or plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
-   ```json
-   {
-      "parser": "@typescript-eslint/parser",
-      "parserOptions": {
-        "ecmaVersion": 13,
-        "sourceType": "module",
-        "ecmaFeatures": {
-          "jsx": true,
-          "modules": true,
-          "experimentalObjectRestSpread": true
-        }
-      },
-      "ignorePatterns": [
-        "**/*",
-        "node_modules"
-      ],
-      "settings": {
-        "react": {
-          "pragma": "React",
-          "fragment": "Fragment",
-          "version": "detect"
-        },
-        "import/resolver": {
-          "typescript": {
-            "alwaysTryTypes": true
-          }
-        }
-      },
-      "extends": [
-        "plugin:nimbus-clean/recommended"
-      ],
-      "plugins": [
-        "nimbus-clean"
-      ]
-   }
+#### Full config
+
+It's recommended for new projects or if you want to see all ESLint errors and warnings for existing projects.
+
+Add `nimbus-clean` to the extends or plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+```json
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "ignorePatterns": [
+    "**/*",
+    "node_modules"
+  ],
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "fragment": "Fragment",
+      "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  },
+  "extends": [
+    "plugin:nimbus-clean/recommended"
+  ],
+  "plugins": [
+    "nimbus-clean"
+  ]
+}
+ ```
+
+#### Incrementally improvements
+
+If you have existing project big/old/etc. you can apply `nimbus-clean` config setting incrementally:
+- `plugin:nimbus-clean/common`
+- `plugin:nimbus-clean/prettier`
+- `plugin:nimbus-clean/import`
+- `plugin:nimbus-clean/simple-import-sort`
+- `plugin:nimbus-clean/react`
+- `plugin:nimbus-clean/promise`
+- `plugin:nimbus-clean/unicorn`
+- `plugin:nimbus-clean/sonarjs`
+- `plugin:nimbus-clean/typescript`
+- `plugin:nimbus-clean/perfectionist`
+
+```json
+{
+  ...
+  "extends": [
+    "plugin:nimbus-clean/common",
+    "plugin:nimbus-clean/prettier",
+    ...
+  ],
+  "plugins": [
+    "nimbus-clean"
+  ]
+}
    ```
 
-2. If you don't have a `.prettierrc` config, please add it
+#### Prettier settings (optional)
+
+If you don't have a `.prettierrc` config, please add it (for example):
    ```prettier
    {
       "singleQuote": true,
