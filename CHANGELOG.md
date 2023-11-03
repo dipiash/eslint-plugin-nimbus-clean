@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.7...v1.1.0) (2023-11-03)
+
+
+### Features
+
+* **configs:** :sparkles: add settings in config section for each rules part ([d7a7f5b](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/d7a7f5b68f617394c639295b3c6156b9f17d5cc0))
+
 ## [1.0.7](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.6...v1.0.7) (2023-11-02)
 
 

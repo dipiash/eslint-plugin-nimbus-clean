@@ -12,6 +12,9 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
 
 - [Installation](#installation)
 - [Usage](#usage)
+  * [Full config](#full-config)
+  * [Incrementally improvements](#incrementally-improvements)
+  * [Prettier settings (optional)](#prettier-settings-optional)
 - [License](#license)
 - [Contributions](#contributions)
 
