@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.1.0...v1.1.1) (2023-11-04)
+
+
+### Documentations
+
+* ✏️ Add ja README.md [#36](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/36) ([e7ff740](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/e7ff740cb8affebdd52a0a5ab91500db4ed11607))
+* ✏️ fix typo ([351f78a](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/351f78af03d7b1eb88bd6867c5db05380da049b1)), closes [#36](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/36)
+* **readme:** :memo: add links to lacalized readme - 日本語 (ja) ([9413c2c](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/9413c2cb3a6ed7273a0e0f84543d507988286ad9))
+
 ## [1.1.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.0.7...v1.1.0) (2023-11-03)
 
 
