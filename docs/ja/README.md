@@ -2,6 +2,8 @@
 [![npm version](https://badge.fury.io/js/eslint-plugin-nimbus-clean.svg?v=0.2.4)](https://badge.fury.io/js/eslint-plugin-nimbus-clean)
 [![HitCount](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean.svg?style=flat-square)](http://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean)
 
+`README.md`: [EN](/README.md) | [日本語](/docs/ja/README.md)
+
 # eslint-plugin-nimbus-clean
 
 コードをクリーンにする包括的なリンティングソリューション。コードベースを簡単に、正確に飛び回ろう！
@@ -10,15 +12,13 @@
 
 <!-- toc -->
 
-- [eslint-plugin-nimbus-clean](#eslint-plugin-nimbus-clean)
-  - [目次](#目次)
-    - [インストール](#インストール)
-    - [利用方法](#利用方法)
-      - [フルコンフィグ](#フルコンフィグ)
-      - [段階的な改善](#段階的な改善)
-      - [Prettier 設定 (オプション)](#prettier-設定-オプション)
-    - [ライセンス](#ライセンス)
-    - [コントリビューション](#コントリビューション)
+- [インストール](#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB)
+- [利用方法](#%E5%88%A9%E7%94%A8%E6%96%B9%E6%B3%95)
+  * [フルコンフィグ](#%E3%83%95%E3%83%AB%E3%82%B3%E3%83%B3%E3%83%95%E3%82%A3%E3%82%B0)
+  * [段階的な改善](#%E6%AE%B5%E9%9A%8E%E7%9A%84%E3%81%AA%E6%94%B9%E5%96%84)
+  * [Prettier 設定 (オプション)](#prettier-%E8%A8%AD%E5%AE%9A-%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3)
+- [ライセンス](#%E3%83%A9%E3%82%A4%E3%82%BB%E3%83%B3%E3%82%B9)
+- [コントリビューション](#%E3%82%B3%E3%83%B3%E3%83%88%E3%83%AA%E3%83%93%E3%83%A5%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3)
 
 <!-- tocstop -->
 
