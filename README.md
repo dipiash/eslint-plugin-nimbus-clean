@@ -2,6 +2,8 @@
 [![npm version](https://badge.fury.io/js/eslint-plugin-nimbus-clean.svg?v=0.2.4)](https://badge.fury.io/js/eslint-plugin-nimbus-clean)
 [![HitCount](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean.svg?style=flat-square)](http://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean)
 
+`README.md`: [EN](/README.md) | [日本語](/docs/ja/README.md)
+
 # eslint-plugin-nimbus-clean
 
 A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!
