@@ -157,4 +157,4 @@ This code is licensed under the [MIT](/LICENSE) License.
 
 ### Contributions
 
-Before making any contributions, refer to [here](/CONTRIBUTING).
+Before making any contributions, refer to [here](/CONTRIBUTING.md).
