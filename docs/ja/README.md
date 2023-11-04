@@ -24,7 +24,7 @@
 
 ### インストール
 
-インストールは以下の方法で行うことができます: `npm`, `yarn`, `pnpm`.
+インストールは以下の方法で行うことができます: `npm`、 `yarn`、 `pnpm`。
 
 最初に [ESLint](https://eslint.org/) と TypeScript をインストールする必要があります:
 
@@ -111,7 +111,7 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 
 #### 段階的な改善
 
-既存のプロジェクトが大きかったり、古かったりする場合には、`nimbus-clean` 設定を段階的にに適用することができます:
+既存のプロジェクトが大きかったり、古かったりする場合には、`nimbus-clean` 設定を段階的に適用することができます:
 - `plugin:nimbus-clean/common`
 - `plugin:nimbus-clean/prettier`
 - `plugin:nimbus-clean/import`
