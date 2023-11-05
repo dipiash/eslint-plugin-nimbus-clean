@@ -6,72 +6,73 @@
 
 # eslint-plugin-nimbus-clean
 
-A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!
+一套全面的靜態程式檢查工具，能夠徹底清理您的程式。使您能夠輕鬆且精確地穿梭於您的程式庫中!
 
-## Table of Contents
+## 目錄
 
 <!-- toc -->
 
-- [Installation](#installation)
-- [Usage](#usage)
-  * [Full config](#full-config)
-  * [Incrementally improvements](#incrementally-improvements)
-  * [Prettier settings (optional)](#prettier-settings-optional)
-- [License](#license)
-- [Contributions](#contributions)
+- [安裝](#安裝)
+- [使用方法](#使用方法)
+  * [完整配置](#完整配置)
+  * [循序漸進](#循序漸進)
+  * [Prettier 設定 (可選)](#prettier-設定-可選)
+- [授權條款](#授權條款)
+- [貢獻](#貢獻)
 
 <!-- tocstop -->
 
-### Installation
+### 安裝
 
-Here you can find instructions how to install it via: `npm`, `yarn`, `pnpm`.
+您可以在這裡找到如何透過 `npm`、`yarn`、`pnpm` 安裝的說明。
 
-You'll first need to install [ESLint](https://eslint.org/) and TypeScript:
+首先，您需要先安裝 [ESLint](https://eslint.org/) 以及 TypeScript:
 
 ```sh
 npm i eslint --save-dev
 npm i typescript
 
-# Or run this to use yarn
+# 或執行以下指令，透過 yarn 安裝
 yarn add eslint --dev
 yarn add typescript
 
-# Or run this to use pnpm
+# 或執行以下指令，透過 pnpm 安裝
 pnpm add eslint --save-dev
 pnpm add typescript
 ```
 
-Next, install `eslint-plugin-nimbus-clean`:
+接著，安裝 `eslint-plugin-nimbus-clean`:
 
 ```sh
 npm install eslint-plugin-nimbus-clean --save-dev
 
-# Or run this to use yarn
+# 或執行以下指令，透過 yarn 安裝
 yarn add eslint-plugin-nimbus-clean --dev
 
-# Or run this to use pnpm
+# 或執行以下指令，透過 pnpm 安裝
 pnpm add eslint-plugin-nimbus-clean --save-dev
 ```
 
-Next, install all peerDependencies for this plugin:
+完成後，安裝該插件全部的對等依賴(peerDependencies):
 
 ```sh
 npx install-peerdeps eslint-plugin-nimbus-clean
 
-# Or run this to use yarn
+# 或執行以下指令，透過 yarn 安裝
 npx install-peerdeps eslint-plugin-nimbus-clean --yarn
 
-# Or run this to use pnpm
+# 或執行以下指令，透過 pnpm 安裝
 npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 ```
 
-### Usage
+### 使用方法
 
-#### Full config
+#### 完整配置
 
-It's recommended for new projects or if you want to see all ESLint errors and warnings for existing projects.
+如果您想要查看新專案或既有專案中所有的 ESLint 錯誤或警告，推薦您使用以下的配置方法。
 
-Add `nimbus-clean` to the extends or plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
+將 `nimbus-clean` 加入 `.eslintrc` 設定檔中的擴展 (extends) 或是插件 (plugins) 區域，您可以省略前綴 `eslint-plugin`:
+
 ```json
 {
   "parser": "@typescript-eslint/parser",
@@ -109,9 +110,10 @@ Add `nimbus-clean` to the extends or plugins section of your `.eslintrc` configu
 }
  ```
 
-#### Incrementally improvements
+#### 循序漸進
 
-If you have existing project big/old/etc. you can apply `nimbus-clean` config setting incrementally:
+如果您現有的專案較為龐大或歷史悠久，您可以循序漸進地套用以下 `nimbus-clean` 的設定:
+
 - `plugin:nimbus-clean/common`
 - `plugin:nimbus-clean/prettier`
 - `plugin:nimbus-clean/import`
@@ -137,9 +139,10 @@ If you have existing project big/old/etc. you can apply `nimbus-clean` config se
 }
    ```
 
-#### Prettier settings (optional)
+#### Prettier 設定 (可選)
 
-If you don't have a `.prettierrc` config, please add it (for example):
+如果您尚未設定 `.prettierrc`，請添加它(以下是範例):
+
    ```prettier
    {
       "singleQuote": true,
@@ -151,10 +154,10 @@ If you don't have a `.prettierrc` config, please add it (for example):
     }
    ```
 
-### License
+### 授權條款
 
-This code is licensed under the [MIT](/LICENSE) License.
+此程式使用 [MIT](/LICENSE) 授權許可證。
 
-### Contributions
+### 貢獻
 
-Before making any contributions, refer to [here](/CONTRIBUTING.md).
+當您要做出任何貢獻前，請您參考[此處](/CONTRIBUTING.md)。
