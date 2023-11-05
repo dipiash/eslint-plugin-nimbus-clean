@@ -1,5 +1,14 @@
 # Changelog
 
+## [1.1.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.1.1...v1.1.2) (2023-11-05)
+
+
+### Documentations
+
+* **readme:** :memo: automate TOC generation for `zh-tw` ([433268b](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/433268b8128c2e4136349017b2e160f31fdd6307))
+* **readme:** :memo: fix link to `CONTRIBUTING.md` file ([f6dc5bc](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/f6dc5bcd46268256f530a75755135149899d54b8))
+* **readme:** ✏️ add zh-tw README.md ([c26156d](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/c26156d9767484ecb3e24eccf73c02a1445e7c43)), closes [#40](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/40)
+
 ## [1.1.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.1.0...v1.1.1) (2023-11-04)
 
 
