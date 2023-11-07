@@ -158,3 +158,6 @@ This code is licensed under the [MIT](/LICENSE) License.
 ### Contributions
 
 Before making any contributions, refer to [here](/CONTRIBUTING.md).
+
+### Show your support
+Star (⭐️) this repository if it helped you!
