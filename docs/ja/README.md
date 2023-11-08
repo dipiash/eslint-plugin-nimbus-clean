@@ -2,7 +2,7 @@
 [![npm version](https://badge.fury.io/js/eslint-plugin-nimbus-clean.svg?v=0.2.4)](https://badge.fury.io/js/eslint-plugin-nimbus-clean)
 [![HitCount](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean.svg?style=flat-square)](http://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean)
 
-`README.md`: [EN](/README.md) | [日本語](/docs/ja/README.md)
+`README.md`: [EN](/README.md) | [日本語](/docs/ja/README.md) | [繁體中文](/docs/zh-tw/README.md)
 
 # eslint-plugin-nimbus-clean
 
@@ -160,5 +160,5 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 
 コントリビューションをする前には、いかなる場合でも[こちら](/CONTRIBUTING.md)を参照してください。
 
-# あなたのサポートをお願いします
+### あなたのサポートをお願いします
 このリポジトリが役立ったのなら、⭐️をつけてください。
