@@ -161,3 +161,6 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 ### 貢獻
 
 當您要做出任何貢獻前，請您參考[此處](/CONTRIBUTING.md)。
+
+
+如果這份備用單能夠幫助到您，請您支持並 ⭐️
