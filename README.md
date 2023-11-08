@@ -156,13 +156,16 @@ If you don't have a `.prettierrc` config, please add it (for example):
 This code is licensed under the [MIT](/LICENSE) License.
 
 ### Contributors
-Thanks go to these wonderful people:
-
-<a href="https://github.com/dipiash/eslint-plugin-nimbus-clean/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=dipiash/eslint-plugin-nimbus-clean" />
-</a>
 
 Before making any contributions, refer to [here](/CONTRIBUTING.md).
 
 ### Show your support
 Star (⭐️) this repository if it helped you!
+
+### Contributions
+
+Thanks go to these wonderful people:
+
+<a href="https://github.com/dipiash/eslint-plugin-nimbus-clean/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dipiash/eslint-plugin-nimbus-clean" />
+</a>
