@@ -19,6 +19,7 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
   * [Prettier settings (optional)](#prettier-settings-optional)
 - [License](#license)
 - [Contributions](#contributions)
+- [Show your support](#show-your-support)
 
 <!-- tocstop -->
 

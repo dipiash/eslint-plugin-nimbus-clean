@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.1.2...v1.1.3) (2023-11-08)
+
+
+### Documentations
+
+* **readme:** :memo: update readme on other languages ([a84215a](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/a84215a8f4ae4f58ff90e68214ea2c515106eabc))
+* **readme:** Add "Show your support" section ([07130a9](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/07130a9270a278ffd3dcb41f8d9ffc57cc3f39bf))
+
 ## [1.1.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.1.1...v1.1.2) (2023-11-05)
 
 
