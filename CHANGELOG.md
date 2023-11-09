@@ -6,9 +6,6 @@
 ### Features
 
 * **contributors:** Added automate contributors list in bottom of README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([ffa74ac](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ffa74acaa7545aae4f07ab8ad665f4d1c39240bb))
-* **contributors:** Added automate contributors list in bottom of README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([7b9fbea](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/7b9fbea0562de97824f229f3d18e68f1d20d4dbd))
-* **contributors:** automate contributors list in README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([ea54073](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ea54073703d7f48875e9286c1535b33d7a23530a))
-
 
 ### Documentations
 
