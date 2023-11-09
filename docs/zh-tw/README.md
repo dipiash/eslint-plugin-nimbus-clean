@@ -19,6 +19,8 @@
   * [Prettier 設定 (可選)](#prettier-%E8%A8%AD%E5%AE%9A-%E5%8F%AF%E9%81%B8)
 - [授權條款](#%E6%8E%88%E6%AC%8A%E6%A2%9D%E6%AC%BE)
 - [貢獻](#%E8%B2%A2%E7%8D%BB)
+- [表示支持](#%E8%A1%A8%E7%A4%BA%E6%94%AF%E6%8C%81)
+- [貢獻者們](#%E8%B2%A2%E7%8D%BB%E8%80%85%E5%80%91)
 
 <!-- tocstop -->
 

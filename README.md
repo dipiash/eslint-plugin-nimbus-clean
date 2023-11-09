@@ -20,6 +20,7 @@ A comprehensive linting solution that sweeps your code clean. Fly through your c
 - [License](#license)
 - [Contributions](#contributions)
 - [Show your support](#show-your-support)
+- [Contributors](#contributors)
 
 <!-- tocstop -->
 

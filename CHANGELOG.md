@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.1.3...v1.2.0) (2023-11-09)
+
+
+### Features
+
+* **contributors:** Added automate contributors list in bottom of README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([ffa74ac](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ffa74acaa7545aae4f07ab8ad665f4d1c39240bb))
+* **contributors:** Added automate contributors list in bottom of README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([7b9fbea](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/7b9fbea0562de97824f229f3d18e68f1d20d4dbd))
+* **contributors:** automate contributors list in README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([ea54073](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ea54073703d7f48875e9286c1535b33d7a23530a))
+
+
+### Documentations
+
+* **readme:** :memo: fix title on readme files ([b45ac5d](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/b45ac5d9cf9f4e0ce8c81c14a4f868650948d95f))
+* **readme:** :memo: update ja, zh-tw readme files ([8d695fd](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/8d695fd35a96b5c72dcc0eb2655df9ac68a19826))
+
 ## [1.1.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.1.2...v1.1.3) (2023-11-08)
 
 
