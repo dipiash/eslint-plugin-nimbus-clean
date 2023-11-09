@@ -162,3 +162,11 @@ Before making any contributions, refer to [here](/CONTRIBUTING.md).
 
 ### Show your support
 Star (⭐️) this repository if it helped you!
+
+### Contributors
+
+Thanks go to these wonderful people:
+
+<a href="https://github.com/dipiash/eslint-plugin-nimbus-clean/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dipiash/eslint-plugin-nimbus-clean" />
+</a>
