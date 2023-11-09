@@ -162,3 +162,11 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 
 ### あなたのサポートをお願いします
 このリポジトリが役立ったのなら、⭐️をつけてください。
+
+### コントリビュータ
+
+これらの素晴らしい人々に感謝します:
+
+<a href="https://github.com/dipiash/eslint-plugin-nimbus-clean/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=dipiash/eslint-plugin-nimbus-clean" />
+</a>
