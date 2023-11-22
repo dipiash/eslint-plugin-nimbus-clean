@@ -117,7 +117,7 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 - `plugin:nimbus-clean/common`
 - `plugin:nimbus-clean/prettier`
 - `plugin:nimbus-clean/import`
-- `plugin:nimbus-clean/simple-import-sort`
+- `plugin:nimbus-clean/simpleImportSort`
 - `plugin:nimbus-clean/react`
 - `plugin:nimbus-clean/promise`
 - `plugin:nimbus-clean/unicorn`
