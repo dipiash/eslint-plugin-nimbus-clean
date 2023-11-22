@@ -20,7 +20,12 @@
     "README.md",
     "package.json"
   ],
+  "homepage": "https://github.com/dipiash/eslint-plugin-nimbus-clean#eslint-plugin-nimbus-clean",
+  "bugs": {
+    "url": "https://github.com/dipiash/eslint-plugin-nimbus-clean/issues"
+  },
   "repository": {
+    "type": "git",
     "url": "https://github.com/dipiash/eslint-plugin-nimbus-clean.git"
   },
   "scripts": {
@@ -68,7 +73,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sonarjs": "^0.21.0",
     "eslint-plugin-testing-library": "^6.0.0",
-    "eslint-plugin-unicorn": "^48.0.1",
+    "eslint-plugin-unicorn": "^49.0.0",
     "husky": "8.0.3",
     "markdown-toc": "1.2.0",
     "npm-run-all": "4.1.5",
@@ -94,7 +99,7 @@
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sonarjs": "^0.21.0",
     "eslint-plugin-testing-library": "^6.0.0",
-    "eslint-plugin-unicorn": "^48.0.1",
+    "eslint-plugin-unicorn": "^49.0.0",
     "prettier": "^3.0.3"
   },
   "peerDependenciesMeta": {
