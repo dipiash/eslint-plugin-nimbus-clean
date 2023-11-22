@@ -1,5 +1,26 @@
 # Changelog
 
+## [1.3.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.2.0...v1.3.0) (2023-11-22)
+
+
+### Features
+
+* **package.json:** :sparkles: update all packages ([84e97ab](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/84e97ab7e0ae66cfb5935ec6f7bf2e66e4557c6c))
+* **eslint-plugin-unicorn:** :sparkles: update to ^49.0.0 ([3e206cb](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/3e206cb51c8da51b729a7cd36eac591823bbfe9d))
+* **docs:** add support for multilingual documentation (HINDI) [#fixes](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/fixes) [#35](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/35) ([6ff6898](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/6ff6898e0f86365cdc1df84dbd0eb2fa3306e27d))
+* **docs:** added multilingual documentation (HINDI) $fixes 35 ([fdd0b3b](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/fdd0b3b153b4d0730d4c3d51d1e1fe3d5ae867ea))
+
+
+### Bug Fixes
+
+* **package.json:** :bug: fix incompatible versions in CI ([b8d493b](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/b8d493b39e5ef449691c5c18d2bb4b1ce7ff3836))
+* **readme:** :bug: fix partial config name ([ea67ae5](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ea67ae5cd3849585a2edb039dfc21ed066e58a9b))
+
+
+### Documentations
+
+* **package.json:** :memo: add `bugs` and `homepage` section ([df042a7](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/df042a7b2540b3d02b00a58322529e5f91adfbd7))
+
 ## [1.2.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.1.3...v1.2.0) (2023-11-09)
 
 
