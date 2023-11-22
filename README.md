@@ -117,7 +117,7 @@ If you have existing project big/old/etc. you can apply `nimbus-clean` config se
 - `plugin:nimbus-clean/common`
 - `plugin:nimbus-clean/prettier`
 - `plugin:nimbus-clean/import`
-- `plugin:nimbus-clean/simple-import-sort`
+- `plugin:nimbus-clean/simpleImportSort`
 - `plugin:nimbus-clean/react`
 - `plugin:nimbus-clean/promise`
 - `plugin:nimbus-clean/unicorn`
