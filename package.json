@@ -20,7 +20,12 @@
     "README.md",
     "package.json"
   ],
+  "homepage": "https://github.com/dipiash/eslint-plugin-nimbus-clean#eslint-plugin-nimbus-clean",
+  "bugs": {
+    "url": "https://github.com/dipiash/eslint-plugin-nimbus-clean/issues"
+  },
   "repository": {
+    "type": "git",
     "url": "https://github.com/dipiash/eslint-plugin-nimbus-clean.git"
   },
   "scripts": {
