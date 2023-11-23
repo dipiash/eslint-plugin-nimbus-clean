@@ -35,16 +35,13 @@ jobs:
         with:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
-      - uses: oven-sh/setup-bun@v1
-        with:
-          bun-version: '1.0.14'
       - run: npm install -g npm
       - name: git config
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-      - run: bun install
-      - run: bun run release ${{ github.event.inputs.bump }}${{ github.event.inputs.dry-run == 'true' && ' --dry-run' || '' }}
+      - run: npm install
+      - run: release-it ${{ github.event.inputs.bump }} -VV ${{ github.event.inputs.dry-run == 'true' && '--dry-run' || '' }}
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
