@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nimbus-clean",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!",
   "keywords": [
     "eslint",
@@ -40,6 +40,7 @@
     "update:eslint-docs": "eslint-doc-generator",
     "commit": "cz",
     "release:prod": "git checkout main && git pull && npm run build && npm run pack && dotenv release-it -- -VV",
+    "release": "npm run pack && dotenv release-it -- -VV",
     "clean": "npm run clean:node-modules && npm run clean:dist",
     "clean:node-modules": "rm -rf node_modules",
     "clean:dist": "rm -rf dist",
