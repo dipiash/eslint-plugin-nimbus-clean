@@ -40,11 +40,11 @@
     "update:eslint-docs": "eslint-doc-generator",
     "commit": "cz",
     "release:prod": "git checkout main && git pull && npm run build && npm run pack && dotenv release-it -- -VV",
-    "release": "npm run pack && dotenv release-it -- -VV",
+    "release": "npm pack --pack-destination=./dist && dotenv release-it -- -VV",
     "clean": "npm run clean:node-modules && npm run clean:dist",
     "clean:node-modules": "rm -rf node_modules",
     "clean:dist": "rm -rf dist",
-    "clean:tgz": "[ -f dist/*.tgz ] && rm -rf dist/*.tgz",
+    "clean:tgz": "rm -rf dist/*.tgz",
     "prepare": "husky install"
   },
   "devDependencies": {
