@@ -44,7 +44,7 @@
     "clean": "npm run clean:node-modules && npm run clean:dist",
     "clean:node-modules": "rm -rf node_modules",
     "clean:dist": "rm -rf dist",
-    "clean:tgz": "rm -rf dist/*.tgz",
+    "clean:tgz": "[ -f dist/*.tgz ] && rm -rf dist/*.tgz",
     "prepare": "husky install"
   },
   "devDependencies": {
