@@ -51,19 +51,19 @@
     }
   },
   "git": {
+    "requireBranch": "release",
     "tagName": "v${version}",
     "commitMessage": "chore: release ${version}",
     "requireCleanWorkingDir": false
   },
-  "npm": {
-    "publish": true,
-    "allowSameVersion": true
-  },
+  "npm": false,
   "github": {
     "release": true,
     "assets": ["dist/*.tgz"]
   },
   "hooks": {
-    "after:bump": "sh ./scripts/prepareTOCinReadme.sh && npm run pack && git add ."
+    "before:bump": "npm run build",
+    "after:bump": "sh ./scripts/prepareTOCinReadme.sh && npm run pack && git add .",
+    "after:release": "npm publish"
   }
 }
