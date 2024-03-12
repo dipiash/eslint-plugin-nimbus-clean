@@ -63,7 +63,7 @@
   },
   "hooks": {
     "before:bump": "npm run build",
-    "after:bump": "sh ./scripts/prepareTOCinReadme.sh && npm run pack && git add .",
+    "after:bump": "npm run release:prepare-toc-in-readme && npm run pack && git add .",
     "after:release": "npm publish"
   }
 }
