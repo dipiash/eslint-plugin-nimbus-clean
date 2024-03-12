@@ -1,5 +1,18 @@
 # Changelog
 
+## [1.3.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.0...v1.3.1) (2024-03-12)
+
+
+### Bug Fixes
+
+* :bug: rename file ([7722453](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/7722453fb2cdb07ffbc37c7293f87c20d32cb986))
+
+
+### CI/CD
+
+* :ferris_wheel: add auto release ([90a1ef2](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/90a1ef2d89ba59418396f196b7c431cced9c6b3f))
+* :ferris_wheel: add config for auto publish throught release-it ([919a384](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/919a384afb49011d48a665e9d0d8e4f1bfcd285a))
+
 ## [1.3.1-auto-release-beta.5](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.1-auto-release-beta.4...v1.3.1-auto-release-beta.5) (2024-03-12)
 
 ## [1.3.1-auto-release-beta.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.1-auto-release-beta.3...v1.3.1-auto-release-beta.4) (2024-03-12)
