@@ -39,6 +39,7 @@
     "lint:syncpack:fix": "syncpack fix-mismatches",
     "update:eslint-docs": "eslint-doc-generator",
     "commit": "cz",
+    "release": "npm run build && npm run pack && dotenv release-it -- --preRelease=auto-release-beta --ci -VV",
     "release:prod": "git checkout main && git pull && npm run build && npm run pack && dotenv release-it -- -VV",
     "clean": "npm run clean:node-modules && npm run clean:dist",
     "clean:node-modules": "rm -rf node_modules",
