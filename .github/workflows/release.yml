@@ -1,0 +1,50 @@
+name: Release & Publish to NPM
+on: workflow_dispatch
+jobs:
+  dependencies:
+    name: Install dependencies
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Cache node_modules
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.9.0
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    needs: [ dependencies ]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # Cache node_modules
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20.9.0
+          cache: 'npm'
+          cache-dependency-path: '**/package-lock.json'
+
+      - name: Install dependencies
+        run: npm ci --prefer-offline
+
+      - name: Initialize git user
+        run: |
+          git config --global user.email "14073668+dipiash@users.noreply.github.com"
+          git config --global user.name "Release Workflow"
+
+      - name: Release
+        run: npm run release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
