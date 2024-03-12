@@ -1,5 +1,38 @@
 # Changelog
 
+## [1.3.1-auto-release-beta.5](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.1-auto-release-beta.4...v1.3.1-auto-release-beta.5) (2024-03-12)
+
+## [1.3.1-auto-release-beta.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.1-auto-release-beta.3...v1.3.1-auto-release-beta.4) (2024-03-12)
+
+## [1.3.1-auto-release-beta.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.1-auto-release-beta.2...v1.3.1-auto-release-beta.3) (2024-03-12)
+
+
+### Bug Fixes
+
+* :bug: fix auth ([038a7c2](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/038a7c2d5d3fb6b016b1b0fc3c60ae5f81f071e2))
+
+## [1.3.1-auto-release-beta.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.1-auto-release-beta.1...v1.3.1-auto-release-beta.2) (2024-03-12)
+
+
+### Bug Fixes
+
+* :bug: add token ([2a443c9](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/2a443c9b57da708805d8d68ccac6fdfac984857d))
+
+## [1.3.1-auto-release-beta.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.0...v1.3.1-auto-release-beta.1) (2024-03-12)
+
+
+### Bug Fixes
+
+* :bug: fix file name ([021b38c](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/021b38c6c133e7ba02c0132faae0b15929abb71c))
+* :bug: fix publish ([7361803](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/73618034fe4263e5809145d5d5f750d0c27b7526))
+
+
+### CI/CD
+
+* :ferris_wheel: add config for auto publish throught release-it ([919a384](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/919a384afb49011d48a665e9d0d8e4f1bfcd285a))
+* :ferris_wheel: fix after:bump hook for TOC in READMEs ([b428a63](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/b428a6366604dc8107dc2f94ea5c5deafc66b845))
+* :ferris_wheel: fix path for READMEs ([d2ab737](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/d2ab7372e81346b6620bc08bd7f674704597ece0))
+
 ## [1.3.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.2.0...v1.3.0) (2023-11-22)
 
 
