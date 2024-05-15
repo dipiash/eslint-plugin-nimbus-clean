@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.1...v1.4.0) (2024-05-15)
+
+
+### Features
+
+* :sparkles: update ESLint plugins ([de40442](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/de4044291458bdf9ff745aca8faf4b87ca7b3a6f))
+
 ## [1.3.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.3.0...v1.3.1) (2024-03-12)
 
 
