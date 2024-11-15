@@ -18,18 +18,16 @@ declare const _default: {
       perfectionist: Linter.Config;
       typescript: Linter.Config;
     };
-    legacy: {
-      recommended: Linter.Config;
-      common: Linter.Config;
-      import: Linter.Config;
-      sonarjs: Linter.Config;
-      prettier: Linter.Config;
-      react: Linter.Config;
-      promise: Linter.Config;
-      unicorn: Linter.Config;
-      perfectionist: Linter.Config;
-      typescript: Linter.Config;
-    }
+    recommended: Linter.Config;
+    common: Linter.Config;
+    import: Linter.Config;
+    sonarjs: Linter.Config;
+    prettier: Linter.Config;
+    react: Linter.Config;
+    promise: Linter.Config;
+    unicorn: Linter.Config;
+    perfectionist: Linter.Config;
+    typescript: Linter.Config;
   };
 
   rules: {
@@ -46,20 +44,18 @@ declare const _default: {
       perfectionist: Linter.RuleEntry;
       typescriptRules: Linter.RuleEntry;
     }
-    legacy: {
-      recommended: Linter.RuleEntry;
-      common: Linter.RuleEntry;
-      import: Linter.RuleEntry;
-      sonarjs: Linter.RuleEntry;
-      prettier: Linter.RuleEntry;
-      react: Linter.RuleEntry;
-      reactHooks: Linter.RuleEntry;
-      reactRefresh: Linter.RuleEntry;
-      promise: Linter.RuleEntry;
-      unicorn: Linter.RuleEntry;
-      perfectionist: Linter.RuleEntry;
-      typescript: Linter.RuleEntry;
-    };
+    recommended: Linter.RuleEntry;
+    common: Linter.RuleEntry;
+    import: Linter.RuleEntry;
+    sonarjs: Linter.RuleEntry;
+    prettier: Linter.RuleEntry;
+    react: Linter.RuleEntry;
+    reactHooks: Linter.RuleEntry;
+    reactRefresh: Linter.RuleEntry;
+    promise: Linter.RuleEntry;
+    unicorn: Linter.RuleEntry;
+    perfectionist: Linter.RuleEntry;
+    typescript: Linter.RuleEntry;
   };
 }
 
