@@ -31,31 +31,17 @@ declare const _default: {
   };
 
   rules: {
-    flat: {
-      recommended: Linter.RuleEntry;
-      common: Linter.RuleEntry;
-      import: Linter.RuleEntry;
-      sonarjs: Linter.RuleEntry;
-      react: Linter.RuleEntry;
-      reactHooks: Linter.RuleEntry;
-      reactRefresh: Linter.RuleEntry;
-      promise: Linter.RuleEntry;
-      unicorn: Linter.RuleEntry;
-      perfectionist: Linter.RuleEntry;
-      typescriptRules: Linter.RuleEntry;
-    }
     recommended: Linter.RuleEntry;
     common: Linter.RuleEntry;
     import: Linter.RuleEntry;
     sonarjs: Linter.RuleEntry;
-    prettier: Linter.RuleEntry;
     react: Linter.RuleEntry;
     reactHooks: Linter.RuleEntry;
     reactRefresh: Linter.RuleEntry;
     promise: Linter.RuleEntry;
     unicorn: Linter.RuleEntry;
     perfectionist: Linter.RuleEntry;
-    typescript: Linter.RuleEntry;
+    typescriptRules: Linter.RuleEntry;
   };
 }
 

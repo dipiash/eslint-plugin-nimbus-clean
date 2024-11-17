@@ -153,6 +153,65 @@ If you don't have a `.prettierrc` config, please add it (for example):
     }
    ```
 
+### Flat config
+
+`eslint.config.js` from **javascript** project
+
+```javascript
+import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
+import globals from "globals";
+
+const config = [
+  ...nimbusCleanPlugin.configs.flat.recommended,
+
+  { ignores: ["dist"] },
+  {
+    files: ["**/*.{js,jsx}"],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parserOptions: {
+        ecmaFeatures: { jsx: true },
+        ecmaVersion: "latest",
+        sourceType: "module",
+      },
+    },
+  },
+];
+
+export default config;
+```
+
+`eslint.config.js` from **typescript** project
+
+
+```typescript
+import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
+import globals from "globals";
+import tsLint from "typescript-eslint";
+
+export default tsLint.config(
+  ...nimbusCleanPlugin.configs.flat.recommended,
+
+  { ignores: ["dist"] },
+  {
+    files: ["**/*.{ts,tsx}"],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+  },
+  {
+    settings: {
+      "import/resolver": {
+        node: true,
+        typescript: true,
+      },
+    },
+  },
+);
+```
+
 ### License
 
 This code is licensed under the [MIT](/LICENSE) License.
