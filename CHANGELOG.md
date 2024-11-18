@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.4.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.4.1...v1.4.2) (2024-05-15)
+
+
+### Bug Fixes
+
+* :bug: fix sonar config ([2bb3fc0](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/2bb3fc0f71927515444f49494468dced1824bac2))
+
 ## [1.4.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.4.0...v1.4.1) (2024-05-15)
 
 
