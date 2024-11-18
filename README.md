@@ -20,6 +20,7 @@ A comprehensive linting solution that sweeps your code clean. Combined rules for
   * [Flat config](#flat-config)
     + [Full config](#full-config-1)
     + [Incrementally improvements](#incrementally-improvements-1)
+    + [Separate rules](#separate-rules)
   * [Prettier settings (optional)](#prettier-settings-optional)
 - [License](#license)
 - [Contributions](#contributions)
@@ -160,6 +161,7 @@ import globals from "globals";
 
 const config = [
   ...nimbusCleanPlugin.configs.flat.recommended,
+  // Other configs
 
   { ignores: ["dist"] },
   {
@@ -188,6 +190,7 @@ import tsLint from "typescript-eslint";
 
 export default tsLint.config(
   ...nimbusCleanPlugin.configs.flat.recommended,
+  // Other configs
 
   { ignores: ["dist"] },
   {
@@ -234,7 +237,7 @@ import globals from "globals";
 const config = [
     ...nimbusCleanPlugin.configs.flat.common,
     ...nimbusCleanPlugin.configs.flat.prettier,
-    ...,
+  // Other configs
 
   { ignores: ["dist"] },
   {
@@ -264,7 +267,100 @@ import tsLint from "typescript-eslint";
 export default tsLint.config(
   ...nimbusCleanPlugin.configs.flat.common,
   ...nimbusCleanPlugin.configs.flat.prettier,
-  ...,
+  // Other configs
+
+  { ignores: ["dist"] },
+  {
+    files: ["**/*.{ts,tsx}"],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+  },
+  {
+    settings: {
+      "import/resolver": {
+        node: true,
+        typescript: true,
+      },
+    },
+  },
+);
+```
+
+##### Separate rules
+
+For flexible customization you can also use separate rules in your configs:
+- `nimbusCleanPlugin.rules.recommended`
+- `nimbusCleanPlugin.rules.common`
+- `nimbusCleanPlugin.rules.import`
+- `nimbusCleanPlugin.rules.sonarjs`
+- `nimbusCleanPlugin.rules.prettier`
+- `nimbusCleanPlugin.rules.react`
+- `nimbusCleanPlugin.rules.reactHooks`
+- `nimbusCleanPlugin.rules.reactRefresh`
+- `nimbusCleanPlugin.rules.promise`
+- `nimbusCleanPlugin.rules.unicorn`
+- `nimbusCleanPlugin.rules.perfectionist`
+- `nimbusCleanPlugin.rules.typescriptRules`
+
+`eslint.config.js` from **javascript** project
+
+```javascript
+import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
+import globals from "globals";
+
+const config = [
+    ...({
+      ...nimbusCleanPlugin.configs.flat.common,
+      rules: {
+        ... nimbusCleanPlugin.rules.common,
+        // Your rules
+      }
+    }),
+    ...nimbusCleanPlugin.configs.flat.prettier,
+    // Other configs
+
+  { ignores: ["dist"] },
+  {
+    files: ["**/*.{js,jsx}"],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+      parserOptions: {
+        ecmaFeatures: { jsx: true },
+        ecmaVersion: "latest",
+        sourceType: "module",
+      },
+    },
+  },
+];
+
+export default config;
+```
+
+`eslint.config.js` from **typescript** project
+
+```typescript
+import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
+import globals from "globals";
+import tsLint from "typescript-eslint";
+
+export default tsLint.config(
+  ...({
+    ...nimbusCleanPlugin.configs.flat.common,
+    rules: {
+      ... nimbusCleanPlugin.rules.common,
+      // Your rules
+    }
+  }),
+  // OR
+  {
+    rules: {
+      ...nimbusClean.rules.flat.typescript,
+    },
+  },
+  // Other configs
 
   { ignores: ["dist"] },
   {
