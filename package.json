@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nimbus-clean",
-  "version": "1.4.1",
+  "version": "2.0.0-alpha.5",
   "description": "A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!",
   "keywords": [
     "eslint",
@@ -15,6 +15,7 @@
   "license": "MIT",
   "main": "./dist/index.js",
   "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "/dist",
     "README.md",
@@ -33,8 +34,7 @@
     "build": "rm -rf ./dist && mkdir ./dist && cp -r ./lib/* ./dist",
     "pack": "npm run clean:tgz && npm pack --pack-destination=./dist",
     "lint": "npm-run-all \"lint:*\"",
-    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
-    "lint:js": "eslint . --ext .js,.ts",
+    "lint:js": "eslint .",
     "lint:syncpack": "syncpack list-mismatches",
     "lint:syncpack:fix": "syncpack fix-mismatches",
     "update:eslint-docs": "eslint-doc-generator",
@@ -45,66 +45,81 @@
     "clean:node-modules": "rm -rf node_modules",
     "clean:dist": "rm -rf dist",
     "clean:tgz": "rm -rf dist/*.tgz",
-    "prepare": "husky install"
+    "prepare": "husky"
   },
   "devDependencies": {
     "@commitlint/cli": "19.3.0",
     "@commitlint/config-conventional": "19.2.2",
+    "@eslint/js": "^9.14.0",
     "@release-it/bumper": "6.0.1",
-    "@release-it/conventional-changelog": "8.0.1",
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
+    "@release-it/conventional-changelog": "8.0.2",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
     "commitizen": "4.3.0",
     "cz-conventional-changelog": "3.3.0",
     "cz-git": "1.9.1",
     "dotenv": "16.4.5",
     "dotenv-cli": " 7.4.2",
-    "eslint": "^8.54.0",
+    "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-doc-generator": "^1.7.1",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-eslint-plugin": "^6.1.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-perfectionist": "^2.10.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-simple-import-sort": "^12.1.0",
-    "eslint-plugin-sonarjs": "^1.0.3",
-    "eslint-plugin-testing-library": "^6.2.2",
-    "eslint-plugin-unicorn": "^53.0.0",
-    "husky": " 9.0.11",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-eslint-plugin": "^6.3.1",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.13.1",
+    "eslint-plugin-perfectionist": "^3.9.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint-plugin-sonarjs": "^2.0.4",
+    "eslint-plugin-testing-library": "^6.4.0",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "globals": "^15.12.0",
+    "husky": "9.1.6",
     "markdown-toc": "1.2.0",
     "npm-run-all": "4.1.5",
-    "prettier": "^3.2.5",
+    "prettier": "^3.3.3",
     "release-it": "17.2.1",
-    "syncpack": "12.3.2"
+    "syncpack": "12.3.2",
+    "typescript-eslint": "^8.14.0"
   },
   "engines": {
     "node": "^14.17.0 || ^16.0.0 || >= 18.0.0"
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
-    "eslint": "^8.54.0",
+    "@eslint/js": "^9.14.0",
+    "typescript-eslint": "^8.14.0",
+    "@typescript-eslint/eslint-plugin": "^8.14.0",
+    "eslint": "^9.14.0",
     "eslint-config-prettier": "^9.1.0",
-    "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-perfectionist": "^2.10.0",
-    "eslint-plugin-prettier": "^5.1.3",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-react": "^7.34.1",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-simple-import-sort": "^12.1.0",
-    "eslint-plugin-sonarjs": "^1.0.3",
-    "eslint-plugin-testing-library": "^6.2.2",
-    "eslint-plugin-unicorn": "^53.0.0",
-    "prettier": "^3.2.5"
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-perfectionist": "^3.9.1",
+    "eslint-plugin-prettier": "^5.2.1",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "eslint-plugin-sonarjs": "^2.0.4",
+    "eslint-plugin-testing-library": "^6.4.0",
+    "eslint-plugin-unicorn": "^56.0.0",
+    "globals": "^15.12.0",
+    "prettier": "^3.3.3"
   },
   "peerDependenciesMeta": {
     "eslint": {
+      "optional": false
+    },
+    "@eslint/js": {
+      "optional": false
+    },
+    "globals": {
+      "optional": false
+    },
+    "typescript-eslint": {
       "optional": false
     },
     "@typescript-eslint/eslint-plugin": {
@@ -137,9 +152,6 @@
     "eslint-plugin-react-hooks": {
       "optional": false
     },
-    "eslint-plugin-simple-import-sort": {
-      "optional": false
-    },
     "eslint-plugin-sonarjs": {
       "optional": false
     },
@@ -156,6 +168,9 @@
       "optional": false
     },
     "prettier": {
+      "optional": false
+    },
+    "eslint-plugin-react-refresh": {
       "optional": false
     }
   }
