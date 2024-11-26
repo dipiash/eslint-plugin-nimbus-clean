@@ -1,5 +1,32 @@
 # Changelog
 
+## [2.0.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v2.0.0...v2.0.1) (2024-11-26)
+
+## [2.0.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.4.2...v2.0.0) (2024-11-18)
+
+
+### ⚠ BREAKING CHANGES
+
+* Add support ESLint >=9
+
+### Features
+
+* :sparkles: bump test version ([b3e99d0](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/b3e99d0735dc4a6b1def6dfba20bc3a189cf0d3d))
+
+
+### Bug Fixes
+
+* :bug: change deprecated `@typescript-eslint/ban-types` rule ([b21ea9e](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/b21ea9e7cd8df45b596caf05fd786d70ae638ebc))
+* :bug: change links to rules and add warn for `sonarjs/todo-tag` ([7250b57](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/7250b57cdeddd81aa8e4bc036239df3b743782e4))
+* :bug: fix module installation ([2754a8c](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/2754a8c17323d6ec98f8fc51299ee01fe446a4f0))
+* :bug: fix types ([ba59cf5](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ba59cf5ede0303fdf2eef11c3198a2168ea2f35c))
+
+
+### Documentations
+
+* :memo: add info about rules in README.md ([9819b77](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/9819b7718b8ead9c14879f2cbb6f03a6c729d965))
+* :memo: update README.md ([08ccfac](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/08ccfac519e6491ff9ec9072d11b0b7243125ca3))
+
 ## [1.4.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.4.1...v1.4.2) (2024-05-15)
 
 
