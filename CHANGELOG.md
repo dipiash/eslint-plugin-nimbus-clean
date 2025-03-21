@@ -1,5 +1,21 @@
 # Changelog
 
+## [4.0.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v2.0.1...v4.0.0) (2025-03-21)
+
+
+### ⚠ BREAKING CHANGES
+
+* This package is now pure ESM. Flat config is now required. ESLint 9.20.0 or later is required.
+
+### Features
+
+* ✨ add fully ESM configuration ([86bb479](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/86bb479589113b00872125ba2aed6f3a0f38e985))
+
+
+### CI/CD
+
+* :ferris_wheel: revert version of release-it depenendencies ([79cae18](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/79cae18aca7270d5c9436183b2c252549f6c8a72))
+
 ## [2.0.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v2.0.0...v2.0.1) (2024-11-26)
 
 ## [2.0.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v1.4.2...v2.0.0) (2024-11-18)
