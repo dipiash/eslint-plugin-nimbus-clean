@@ -1,10 +1,8 @@
-"use strict";
+import js from '@eslint/js'
+import nodePlugin from 'eslint-plugin-n'
+import globals from 'globals'
 
-const js = require("@eslint/js");
-const nodePlugin = require("eslint-plugin-n");
-const globals = require("globals");
-
-module.exports = [
+export default [
   js.configs.recommended,
   nodePlugin.configs["flat/recommended-script"],
 
@@ -13,6 +11,7 @@ module.exports = [
       globals: {
         ...globals.node,
       },
+      sourceType: 'module',
     },
   },
   {
