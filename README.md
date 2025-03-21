@@ -1,8 +1,6 @@
 ![GitHub CI](https://github.com/dipiash/eslint-plugin-nimbus-clean/actions/workflows/ci.yml/badge.svg)
 [![npm version](https://badge.fury.io/js/eslint-plugin-nimbus-clean.svg?v=0.2.4)](https://badge.fury.io/js/eslint-plugin-nimbus-clean)
-[![HitCount](https://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean.svg?style=flat-square)](http://hits.dwyl.com/dipiash/eslint-plugin-nimbus-clean)
-
-`README.md`: [EN](/README.md) | [日本語](/docs/ja/README.md) | [繁體中文](/docs/zh-tw/README.md) | [हिंदी](/docs/hi/README.md)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2Fdipiash%2Feslint-plugin-nimbus-clean&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false)](https://hits.seeyoufarm.com)
 
 # eslint-plugin-nimbus-clean
 
@@ -14,12 +12,8 @@ A comprehensive linting solution that sweeps your code clean. Combined rules for
 
 - [Installation](#installation)
 - [Usage](#usage)
-  * [Legacy config](#legacy-config)
-    + [Full config](#full-config)
+  * [Config](#config)
     + [Incrementally improvements](#incrementally-improvements)
-  * [Flat config](#flat-config)
-    + [Full config](#full-config-1)
-    + [Incrementally improvements](#incrementally-improvements-1)
     + [Separate rules](#separate-rules)
   * [Prettier settings (optional)](#prettier-settings-optional)
 - [License](#license)
@@ -30,6 +24,8 @@ A comprehensive linting solution that sweeps your code clean. Combined rules for
 <!-- tocstop -->
 
 ### Installation
+
+**Requires ESLint `>=9.20.0`, [flat config](https://eslint.org/docs/latest/use/configure/configuration-files), and [ESM](https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c#how-can-i-make-my-typescript-project-output-esm).**
 
 Here you can find instructions how to install it via: `npm`, `yarn`, `pnpm`.
 
@@ -74,93 +70,18 @@ npx install-peerdeps eslint-plugin-nimbus-clean --pnpm
 
 ### Usage
 
-#### Legacy config
-
-Suitable for ESLint version < 9
-
-##### Full config
-
-It's recommended for new projects or if you want to see all ESLint errors and warnings for existing projects.
-
-Add `nimbus-clean` to the extends or plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-` prefix:
-```json
-{
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 13,
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "jsx": true,
-      "modules": true,
-      "experimentalObjectRestSpread": true
-    }
-  },
-  "ignorePatterns": [
-    "**/*",
-    "node_modules"
-  ],
-  "settings": {
-    "react": {
-      "pragma": "React",
-      "fragment": "Fragment",
-      "version": "detect"
-    },
-    "import/resolver": {
-      "typescript": {
-        "alwaysTryTypes": true
-      }
-    }
-  },
-  "extends": [
-    "plugin:nimbus-clean/recommended"
-  ],
-  "plugins": [
-    "nimbus-clean"
-  ]
-}
- ```
-
-##### Incrementally improvements
-
-If you have existing project big/old/etc. you can apply `nimbus-clean` config setting incrementally:
-- `plugin:nimbus-clean/common`
-- `plugin:nimbus-clean/prettier`
-- `plugin:nimbus-clean/import`
-- `plugin:nimbus-clean/simpleImportSort`
-- `plugin:nimbus-clean/react`
-- `plugin:nimbus-clean/promise`
-- `plugin:nimbus-clean/unicorn`
-- `plugin:nimbus-clean/sonarjs`
-- `plugin:nimbus-clean/typescript`
-- `plugin:nimbus-clean/perfectionist`
-
-```json
-{
-  ...
-  "extends": [
-    "plugin:nimbus-clean/common",
-    "plugin:nimbus-clean/prettier",
-    ...
-  ],
-  "plugins": [
-    "nimbus-clean"
-  ]
-}
-```
-
-#### Flat config
+#### Config
 
 Suitable for ESLint >= 9
 
-##### Full config
-`eslint.config.js` from **javascript** project
+`eslint.config.mjs` from **javascript** project
 
 ```javascript
 import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
 import globals from "globals";
 
 const config = [
-  ...nimbusCleanPlugin.configs.flat.recommended,
+  ...nimbusCleanPlugin.configs.recommended,
   // Other configs
 
   { ignores: ["dist"] },
@@ -181,7 +102,7 @@ const config = [
 export default config;
 ```
 
-`eslint.config.js` from **typescript** project
+`eslint.config.mjs` from **typescript** project
 
 ```typescript
 import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
@@ -189,7 +110,7 @@ import globals from "globals";
 import tsLint from "typescript-eslint";
 
 export default tsLint.config(
-  ...nimbusCleanPlugin.configs.flat.recommended,
+  ...nimbusCleanPlugin.configs.recommended,
   // Other configs
 
   { ignores: ["dist"] },
@@ -214,29 +135,29 @@ export default tsLint.config(
 ##### Incrementally improvements
 
 If you have existing project big/old/etc. you can apply `nimbus-clean` config setting incrementally:
-- `nimbusCleanPlugin.configs.flat.common`
-- `nimbusCleanPlugin.configs.flat.prettier`
-- `nimbusCleanPlugin.configs.flat.import`
-- `nimbusCleanPlugin.configs.flat.simpleImportSort`
-- `nimbusCleanPlugin.configs.flat.react`
-- `nimbusCleanPlugin.configs.flat.reactHooks`
-- `nimbusCleanPlugin.configs.flat.jsxA11y`
-- `nimbusCleanPlugin.configs.flat.promise`
-- `nimbusCleanPlugin.configs.flat.unicorn`
-- `nimbusCleanPlugin.configs.flat.sonarjs`
-- `nimbusCleanPlugin.configs.flat.typescript`
-- `nimbusCleanPlugin.configs.flat.perfectionist`
-- `nimbusCleanPlugin.configs.flat.testingLibrary`
+- `nimbusCleanPlugin.configs.common`
+- `nimbusCleanPlugin.configs.prettier`
+- `nimbusCleanPlugin.configs.import`
+- `nimbusCleanPlugin.configs.simpleImportSort`
+- `nimbusCleanPlugin.configs.react`
+- `nimbusCleanPlugin.configs.reactHooks`
+- `nimbusCleanPlugin.configs.jsxA11y`
+- `nimbusCleanPlugin.configs.promise`
+- `nimbusCleanPlugin.configs.unicorn`
+- `nimbusCleanPlugin.configs.sonarjs`
+- `nimbusCleanPlugin.configs.typescript`
+- `nimbusCleanPlugin.configs.perfectionist`
+- `nimbusCleanPlugin.configs.testingLibrary`
 
-`eslint.config.js` from **javascript** project
+`eslint.config.mjs` from **javascript** project
 
 ```javascript
 import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
 import globals from "globals";
 
 const config = [
-    ...nimbusCleanPlugin.configs.flat.common,
-    ...nimbusCleanPlugin.configs.flat.prettier,
+    ...nimbusCleanPlugin.configs.common,
+    ...nimbusCleanPlugin.configs.prettier,
   // Other configs
 
   { ignores: ["dist"] },
@@ -257,7 +178,7 @@ const config = [
 export default config;
 ```
 
-`eslint.config.js` from **typescript** project
+`eslint.config.mjs` from **typescript** project
 
 ```typescript
 import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
@@ -265,8 +186,8 @@ import globals from "globals";
 import tsLint from "typescript-eslint";
 
 export default tsLint.config(
-  ...nimbusCleanPlugin.configs.flat.common,
-  ...nimbusCleanPlugin.configs.flat.prettier,
+  ...nimbusCleanPlugin.configs.common,
+  ...nimbusCleanPlugin.configs.prettier,
   // Other configs
 
   { ignores: ["dist"] },
@@ -304,7 +225,7 @@ For flexible customization you can also use separate rules in your configs:
 - `nimbusCleanPlugin.rules.perfectionist`
 - `nimbusCleanPlugin.rules.typescriptRules`
 
-`eslint.config.js` from **javascript** project
+`eslint.config.mjs` from **javascript** project
 
 ```javascript
 import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
@@ -312,13 +233,13 @@ import globals from "globals";
 
 const config = [
     ...({
-      ...nimbusCleanPlugin.configs.flat.common,
+      ...nimbusCleanPlugin.configs.common,
       rules: {
         ... nimbusCleanPlugin.rules.common,
         // Your rules
       }
     }),
-    ...nimbusCleanPlugin.configs.flat.prettier,
+    ...nimbusCleanPlugin.configs.prettier,
     // Other configs
 
   { ignores: ["dist"] },
@@ -339,7 +260,7 @@ const config = [
 export default config;
 ```
 
-`eslint.config.js` from **typescript** project
+`eslint.config.mjs` from **typescript** project
 
 ```typescript
 import nimbusCleanPlugin from "eslint-plugin-nimbus-clean";
@@ -348,7 +269,7 @@ import tsLint from "typescript-eslint";
 
 export default tsLint.config(
   ...({
-    ...nimbusCleanPlugin.configs.flat.common,
+    ...nimbusCleanPlugin.configs.common,
     rules: {
       ... nimbusCleanPlugin.rules.common,
       // Your rules
@@ -357,7 +278,7 @@ export default tsLint.config(
   // OR
   {
     rules: {
-      ...nimbusClean.rules.flat.typescript,
+      ...nimbusClean.rules.typescript,
     },
   },
   // Other configs
