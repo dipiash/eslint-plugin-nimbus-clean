@@ -49,7 +49,7 @@
       "in": "package.json",
       "out": ["package.json", "dist/package.json"]
     },
-    "@release-it/npm": {
+    "npm": {
       "pkgRoot": "./dist/package",
       "publish": true
     }
