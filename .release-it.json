@@ -58,7 +58,7 @@
   },
   "npm": {
     "publishPath": "./dist/package",
-    "release": false,
+    "release": false
   },
   "github": {
     "release": true,
