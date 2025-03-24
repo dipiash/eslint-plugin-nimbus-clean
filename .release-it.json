@@ -56,17 +56,14 @@
     "commitMessage": "chore: release ${version}",
     "requireCleanWorkingDir": false
   },
-  "npm": {
-    "publishPath": "./dist/package",
-    "release": false
-  },
+  "npm": false,
   "github": {
     "release": true,
-    "assets": ["dist/*.tgz"]
+    "assets": ["assets/*.tgz"]
   },
   "hooks": {
     "before:bump": "npm run build",
-    "after:bump": "npm run release:prepare-toc-in-readme && npm run build-and-pack && git add .",
+    "after:bump": "npm run release:prepare-toc-in-readme && npm run prepare-publish && git add .",
     "after:release": "npm publish"
   }
 }
