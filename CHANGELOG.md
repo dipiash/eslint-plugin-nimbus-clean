@@ -1,5 +1,17 @@
 # Changelog
 
+## [4.0.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.0...v4.0.1) (2025-03-24)
+
+
+### Bug Fixes
+
+* :bug: fix commit lint config ([d3443e6](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/d3443e61efc178cae457b182aa1fd09bda11ef27))
+
+
+### Documentations
+
+* :memo: fully migrate to ESM config ([3ecb1b2](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/3ecb1b2935b5a90b906f5e94a8b0cf4ba1417bec))
+
 ## [4.0.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v2.0.1...v4.0.0) (2025-03-21)
 
 
