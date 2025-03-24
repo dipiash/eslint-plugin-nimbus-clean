@@ -48,10 +48,6 @@
     "@release-it/bumper": {
       "in": "package.json",
       "out": ["package.json", "dist/package.json"]
-    },
-    "npm": {
-      "pkgRoot": "./dist/package",
-      "publish": true
     }
   },
   "git": {
@@ -60,7 +56,10 @@
     "commitMessage": "chore: release ${version}",
     "requireCleanWorkingDir": false
   },
-  "npm": false,
+  "npm": {
+    "pkgRoot": "./dist/package",
+    "publish": true
+  },
   "github": {
     "release": true,
     "assets": ["dist/*.tgz"]
