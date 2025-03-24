@@ -57,8 +57,7 @@
     "requireCleanWorkingDir": false
   },
   "npm": {
-    "pkgRoot": "./dist/package",
-    "publish": true
+    "publishPath": "./dist/package"
   },
   "github": {
     "release": true,
