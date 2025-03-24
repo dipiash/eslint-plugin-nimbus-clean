@@ -34,6 +34,7 @@
     "init": "npm run clean && npm i",
     "build": "rm -rf ./dist && mkdir ./dist && cp -r ./lib/* ./dist",
     "pack": "npm run clean:tgz && npm pack --pack-destination=./dist",
+    "build-and-pack": "npm run build && sh scripts/pack.sh",
     "lint": "npm-run-all \"lint:*\"",
     "lint:js": "eslint .",
     "lint:syncpack": "syncpack list-mismatches",
