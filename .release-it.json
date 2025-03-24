@@ -47,7 +47,7 @@
     },
     "@release-it/bumper": {
       "in": "package.json",
-      "out": ["package.json", "dist/package.json"]
+      "out": ["package.json"]
     }
   },
   "git": {
