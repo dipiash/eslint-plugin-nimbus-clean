@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.2...v4.0.3) (2025-06-11)
+
+
+### Bug Fixes
+
+* :bug: fix peerDependencies ([1950217](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/1950217dc70501434980b2bc93b72253b8b1ce97))
+
 ## [4.0.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.1...v4.0.2) (2025-03-24)
 
 ## [4.0.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.0...v4.0.1) (2025-03-24)
