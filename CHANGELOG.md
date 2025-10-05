@@ -1,5 +1,7 @@
 # Changelog
 
+## [4.0.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.3...v4.0.4) (2025-10-05)
+
 ## [4.0.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.2...v4.0.3) (2025-06-11)
 
 
