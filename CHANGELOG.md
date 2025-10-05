@@ -1,5 +1,85 @@
 # Changelog
 
+## [5.0.0](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.4...v5.0.0) (2025-10-05)
+
+
+### ⚠ BREAKING CHANGES
+
+* This package is now pure ESM. Flat config is now required. ESLint 9.20.0 or later is required.
+* Add support ESLint >=9
+* Custom Settings on projects can catch the errors
+
+### Features
+
+* :sparkles: bump test version ([396fee1](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/396fee1ae0e3a83fd819b0d4774cc6c5369abd39))
+* :sparkles: update all packages ([b0d19aa](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/b0d19aad3d5bf648d84acb210a0e29df3f23a07b))
+* :sparkles: update ESLint plugins ([3071687](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/307168748ab3e2100fe0691c2652d6c2eb9cdd8a))
+* :sparkles: updated eslint-plugin-perfectionist to latest version 2.2.0 ([5c4f366](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/5c4f366706b5da18695932a85fa62ebbed92b6b4)), closes [#12](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/12)
+* ✨ add fully ESM configuration ([30c8269](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/30c826930055f477fd9c31e03747f85282bd3663))
+* **configs:** :sparkles: add settings in config section for each rules part ([640ca20](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/640ca205767758a73154313fe8a26bb5dd365245))
+* **contributors:** Added automate contributors list in bottom of README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([f406984](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/f4069842e1a5583547c8aa4ae78d6b46e28b6790))
+* **contributors:** Added automate contributors list in bottom of README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([92644ad](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/92644ad2a595966896b8e172f3d6b588faed562b))
+* **contributors:** automate contributors list in README Fixes [#48](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/48) ([8387440](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/8387440e2505c4bfaae9d506fcc44a389216303e))
+* **docs:** add support for multilingual documentation (HINDI) [#fixes](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/fixes) [#35](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/35) ([37bbac4](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/37bbac4236ddd15220a80d16cf5d21ad74d5a7f8))
+* **docs:** added multilingual documentation (HINDI) $fixes 35 ([644b5c5](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/644b5c5643a3e8e8bc62e520c65fdb499e4396ab))
+* **eslint-plugin-unicorn:** :sparkles: update to ^49.0.0 ([95ff914](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/95ff9148630a40dc05a8a04d5b53d2d0b5b4b6af))
+
+
+### Bug Fixes
+
+* :bug: change deprecated `@typescript-eslint/ban-types` rule ([c81a250](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/c81a250c894e8e71476d476e8354e72b990ae02f))
+* :bug: change links to rules and add warn for `sonarjs/todo-tag` ([3a6487f](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/3a6487f4a51079f08effcd58fae229f9ff127cc8))
+* :bug: fix commit lint config ([2b9144d](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/2b9144d4e4de80f4bef9cfb0fba7cfa2e065ff0d))
+* :bug: fix module installation ([1441569](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/144156987c580b28463c5802edbd7ba4eaf619ac))
+* :bug: fix peerDependencies ([d2609a6](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/d2609a66d50efcd0d46c822821a2508464ac983c))
+* :bug: fix setup without prettier. Updated readme ([aae2c2d](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/aae2c2da4b1f8c0318ce902f70d63177ca8a3785))
+* :bug: fix sonar config ([0f9eeb9](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/0f9eeb996cf9d989eccacf19b7a7835d97c1bfec))
+* :bug: fix sonar exatension ([ef6770b](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ef6770bb50b5a9efa9927ed7b438b0a0d70cef86))
+* :bug: fix types ([c31d717](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/c31d7172057b4415ed1a5e488665384e33671c31))
+* :bug: reinstall dependencies ([ae939a5](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ae939a5a90ee4b51085255c0efc4cc84644cbec7))
+* :bug: rename file ([db41336](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/db41336f3695d06a46d410916f12002810f596c0))
+* **eslint-plugin-eslint-plugin:** :bug: fix params from `flat/recommended` -> `recommended` ([12478e5](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/12478e52cc8cd006151685236211836371db7665))
+* **package.json:** :bug: fix incompatible versions in CI ([66c0e1d](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/66c0e1de90712fa74be494a62971888a5dedb14a))
+* **readme:** :bug: fix partial config name ([aed452f](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/aed452ff159e03289e19bf3ede370ba626be789e))
+* **release-it:** :bug: fix `tgz` assets version in release changelog ([c4d6149](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/c4d61498d5511ba703e755a4bca2d4d8db3fb825))
+* update eslint-plugin-sonarjs to latest version 0.21.0 ([613d081](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/613d081e34759809b4dd4aa3810cacafe76fe8a2))
+* update package-lock.json ([43728b3](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/43728b3c70a42f4e45b6e2b134c3ccbaf103187f))
+
+
+### Documentations
+
+* :memo: add `Table of Contents` section into readme ([d408443](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/d408443941d2d786492a9b4b20fd1589f4056c9a))
+* :memo: add badges in README.md ([2cba485](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/2cba485750ee53f2733190f9a0f37306d0621045))
+* :memo: add bagend in README.md ([b0c275e](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/b0c275eec6aba642e227a41b9720d92fb646b0a9))
+* :memo: add info about rules in README.md ([a0dc69b](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/a0dc69b50d4a68b53f7eb1a14e71f784908f18b6))
+* :memo: fix badges for: npm and hit counter ([cf6c434](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/cf6c43439d77260b02304808b59efe4697b7747f))
+* :memo: fully migrate to ESM config ([aa954c9](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/aa954c91586e39cce4eadd6241b0cbd3bcbd2000))
+* :memo: revert NPM badge ([bb7c091](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/bb7c091209ab292128ab30da5671cbf40cb8cb78))
+* :memo: update README.md ([2eee393](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/2eee393981e7d02d93fc13608ad64f6ad736b115))
+* ✏️ Add ja README.md [#36](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/36) ([aa4513a](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/aa4513a1408ff3e4f64480541ba47caef2c8141c))
+* ✏️ fix typo ([2942a79](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/2942a7933997e6574a9b94d30f030523d2991372)), closes [#36](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/36)
+* add instructions for yarn ([8084679](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/80846798e67f67797e5265d6278556c4722ac75a))
+* **package.json:** :memo: add bugs and homapge section ([d80e2f8](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/d80e2f80feda7f9e95ad5dfe49ecc20fb8301e06))
+* **readme:** :memo: add links to lacalized readme - 日本語 (ja) ([922fccb](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/922fccbac84935881c9e2604c83013ce331de96a))
+* **readme:** :memo: automate TOC generation for `zh-tw` ([7f82d14](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/7f82d1455ee088f7fea560fdbc89ad0d35da1cdb))
+* **readme:** :memo: fix link to `CONTRIBUTING.md` file ([e32408c](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/e32408c8f73b16ff1556573c03679de429764171))
+* **readme:** :memo: fix title on readme files ([9d3cba7](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/9d3cba72ddc747363554de70f2762dcb582becbc))
+* **readme:** :memo: make changes in README.md file ([7310da8](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/7310da873a79f308fdbefeab2ab9abceb9f1b3cc))
+* **readme:** :memo: shortened the description about installation process ([3e005f8](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/3e005f894fb381d8de2b3969ecc7090eb2110f2b))
+* **readme:** :memo: update ja, zh-tw readme files ([47b0c56](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/47b0c5607cb28893511e04a2c036fd6724d9030e))
+* **readme:** :memo: update readme on other languages ([3ba9711](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/3ba971118942a09db55058d52ecc2f982b081b19))
+* **readme:** ✏️ add zh-tw README.md ([a694bb8](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/a694bb8736a319a2b058e547be67c14026a53213)), closes [#40](https://github.com/dipiash/eslint-plugin-nimbus-clean/issues/40)
+* **readme:** Add "Show your support" section ([b6b0798](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/b6b07986b3f8c980d7899b29531c6f962c9a8b4b))
+* **readme:** add link to contributing.md ([c46ac2d](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/c46ac2d6e4dc7fa6847c272b7b0f0747c86ae06e))
+* **readme:** grammatical correction ([f6f2717](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/f6f2717557ca9809b551ff8e3a4bf54d87ce2986))
+
+
+### CI/CD
+
+* :ferris_wheel: add auto release ([0263ade](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/0263adede8f2d69eabca28852f8a0a363d68db40))
+* :ferris_wheel: add config for auto publish throught release-it ([2b7b1f9](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/2b7b1f90d074f5bb1fbd900591217299d3768d70))
+* :ferris_wheel: revert version of release-it depenendencies ([a47c466](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/a47c466b498c3c76a1b10f949a2c42efc683dc7e))
+
 ## [4.0.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.3...v4.0.4) (2025-10-05)
 
 ## [4.0.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v4.0.2...v4.0.3) (2025-06-11)
