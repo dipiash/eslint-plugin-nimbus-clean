@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-nimbus-clean",
-  "version": "5.1.0",
+  "version": "5.0.0",
   "description": "A comprehensive linting solution that sweeps your code clean. Fly through your codebase with ease and precision!",
   "keywords": [
     "eslint",
@@ -55,13 +55,13 @@
     "@commitlint/config-conventional": "19.8.0",
     "@eslint/js": "^9.39.2",
     "@release-it/bumper": "6.0.1",
-    "@release-it/conventional-changelog": "^10.0.4",
+    "@release-it/conventional-changelog": "8.0.2",
     "@typescript-eslint/eslint-plugin": "^8.50.1",
-    "commitizen": "^3.0.0",
-    "cz-conventional-changelog": "^3.0.1",
+    "commitizen": "4.3.1",
+    "cz-conventional-changelog": "3.3.0",
     "cz-git": "1.11.1",
-    "dotenv": "17.2.3",
-    "dotenv-cli": "11.0.0",
+    "dotenv": "16.4.7",
+    "dotenv-cli": "8.0.0",
     "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
     "eslint-doc-generator": "^2.4.0",
@@ -84,8 +84,8 @@
     "markdown-toc": "1.2.0",
     "npm-run-all": "4.1.5",
     "prettier": "^3.7.4",
-    "release-it": "^19.2.0",
-    "syncpack": "13.0.4",
+    "release-it": "17.2.1",
+    "syncpack": "13.0.3",
     "typescript-eslint": "^8.50.1"
   },
   "engines": {
