@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.0.2](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v5.0.1...v5.0.2) (2026-03-13)
+
+### CI/CD
+
+* :ferris_wheel: fix deploy on npm ([767fee7](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/767fee7b1d1cc0f354367cf60295b89abbeafc51))
+
 ## [5.0.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v5.0.0...v5.0.1) (2025-12-29)
 
 ## [5.0.1](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v5.0.0...v5.0.1) (2025-12-28)
