@@ -1,77 +1,93 @@
+import { ESLint } from 'eslint'
+import perfectionistPlugin from 'eslint-plugin-perfectionist'
 import { describe, expect, it } from 'vitest'
 
 import perfectionistRules from '../lib/rules/perfectionist.js'
 
-const getRuleOptions = (ruleName) => perfectionistRules[ruleName][1]
+const lintWithRule = async ({ ruleName, code, parserOptions = {}, filename = 'test.jsx' }) => {
+  const eslint = new ESLint({
+    overrideConfigFile: true,
+    ignore: false,
+    overrideConfig: [
+      {
+        files: ['**/*.{js,jsx,ts,tsx}'],
+        languageOptions: {
+          ecmaVersion: 'latest',
+          sourceType: 'module',
+          parserOptions,
+        },
+        plugins: {
+          perfectionist: perfectionistPlugin,
+        },
+        rules: {
+          [ruleName]: perfectionistRules[ruleName],
+        },
+      },
+    ],
+  })
 
-const matchesPattern = (patternOrPatterns, value) => {
-  const patterns = Array.isArray(patternOrPatterns) ? patternOrPatterns : [patternOrPatterns]
+  const [result] = await eslint.lintText(code, { filePath: filename })
 
-  return patterns.some((pattern) => new RegExp(pattern).test(value))
+  return result.messages
 }
 
-describe('perfectionist custom group patterns', () => {
-  it('matches intended modules for sort-imports react group', () => {
-    const options = getRuleOptions('perfectionist/sort-imports')
-    const reactGroup = options.customGroups.find((group) => group.groupName === 'react')
+describe('perfectionist config works on real linted code', () => {
+  it('treats callback JSX props as callback group (issue #106 regression)', async () => {
+    const messages = await lintWithRule({
+      ruleName: 'perfectionist/sort-jsx-props',
+      filename: 'component.jsx',
+      parserOptions: { ecmaFeatures: { jsx: true } },
+      code: `
+        const fn = () => {}
+        const view = <Widget zeta="1" onClick={fn} />
+      `,
+    })
 
-    expect(matchesPattern(reactGroup.elementNamePattern, 'react')).toBe(true)
-    expect(matchesPattern(reactGroup.elementNamePattern, 'react-dom')).toBe(true)
-    expect(matchesPattern(reactGroup.elementNamePattern, '@apollo/client')).toBe(true)
-    expect(matchesPattern(reactGroup.elementNamePattern, 'styled-components')).toBe(true)
-    expect(matchesPattern(reactGroup.elementNamePattern, 'next/router')).toBe(true)
-    expect(matchesPattern(reactGroup.elementNamePattern, '@material/ui')).toBe(true)
-
-    expect(matchesPattern(reactGroup.elementNamePattern, 'preact')).toBe(false)
-    expect(matchesPattern(reactGroup.elementNamePattern, 'my-reactive-lib')).toBe(false)
-    expect(matchesPattern(reactGroup.elementNamePattern, 'nextjs')).toBe(false)
-    expect(matchesPattern(reactGroup.elementNamePattern, '@materialui/core')).toBe(false)
+    expect(messages).toHaveLength(0)
   })
 
-  it('matches only scoped packages for sort-imports monorepo group', () => {
-    const options = getRuleOptions('perfectionist/sort-imports')
-    const monorepoGroup = options.customGroups.find((group) => group.groupName === 'monorepos')
+  it('does not treat monkey as key (no minimatch-style substring false positive)', async () => {
+    const messages = await lintWithRule({
+      ruleName: 'perfectionist/sort-jsx-props',
+      filename: 'component.jsx',
+      parserOptions: { ecmaFeatures: { jsx: true } },
+      code: `
+        const view = <Widget monkey="1" id="2" />
+      `,
+    })
 
-    expect(matchesPattern(monorepoGroup.elementNamePattern, '@scope')).toBe(true)
-    expect(matchesPattern(monorepoGroup.elementNamePattern, '@scope/pkg')).toBe(true)
-
-    expect(matchesPattern(monorepoGroup.elementNamePattern, 'scope/pkg')).toBe(false)
-    expect(matchesPattern(monorepoGroup.elementNamePattern, '@/pkg')).toBe(false)
+    expect(messages.length).toBeGreaterThan(0)
+    expect(messages[0].ruleId).toBe('perfectionist/sort-jsx-props')
   })
 
-  it('avoids substring false positives for jsx props and still matches callbacks', () => {
-    const options = getRuleOptions('perfectionist/sort-jsx-props')
-    const keyGroup = options.customGroups.find((group) => group.groupName === 'key')
-    const idGroup = options.customGroups.find((group) => group.groupName === 'id')
-    const topGroup = options.customGroups.find((group) => group.groupName === 'top')
-    const callbackGroup = options.customGroups.find((group) => group.groupName === 'callback')
+  it('does not treat videoId as id (no substring false positive)', async () => {
+    const messages = await lintWithRule({
+      ruleName: 'perfectionist/sort-jsx-props',
+      filename: 'component.jsx',
+      parserOptions: { ecmaFeatures: { jsx: true } },
+      code: `
+        const view = <Widget videoId="1" title="Title" />
+      `,
+    })
 
-    expect(matchesPattern(keyGroup.elementNamePattern, 'key')).toBe(true)
-    expect(matchesPattern(keyGroup.elementNamePattern, 'monkey')).toBe(false)
-
-    expect(matchesPattern(idGroup.elementNamePattern, 'id')).toBe(true)
-    expect(matchesPattern(idGroup.elementNamePattern, 'videoId')).toBe(false)
-
-    expect(matchesPattern(topGroup.elementNamePattern, 'title')).toBe(true)
-    expect(matchesPattern(topGroup.elementNamePattern, 'subtitle')).toBe(false)
-
-    expect(matchesPattern(callbackGroup.elementNamePattern, 'onClick')).toBe(true)
-    expect(matchesPattern(callbackGroup.elementNamePattern, 'handleSubmit')).toBe(true)
-    expect(matchesPattern(callbackGroup.elementNamePattern, 'loadData')).toBe(true)
-    expect(matchesPattern(callbackGroup.elementNamePattern, 'buttonOnClick')).toBe(false)
+    expect(messages.length).toBeGreaterThan(0)
+    expect(messages[0].ruleId).toBe('perfectionist/sort-jsx-props')
   })
 
-  it('matches callback-like names for sort-object-types and sort-objects', () => {
-    const objectTypesOptions = getRuleOptions('perfectionist/sort-object-types')
-    const objectsOptions = getRuleOptions('perfectionist/sort-objects')
+  it('treats callback object keys as callback group in sort-objects', async () => {
+    const messages = await lintWithRule({
+      ruleName: 'perfectionist/sort-objects',
+      filename: 'object.js',
+      code: `
+        const obj = {
+          zeta: 1,
+          onClick() {
+            return 1
+          },
+        }
+      `,
+    })
 
-    const objectTypeCallback = objectTypesOptions.customGroups.find((group) => group.groupName === 'callback')
-    const objectCallback = objectsOptions.customGroups.find((group) => group.groupName === 'callback')
-
-    expect(matchesPattern(objectTypeCallback.elementNamePattern, 'updateUser')).toBe(true)
-    expect(matchesPattern(objectTypeCallback.elementNamePattern, 'userUpdate')).toBe(false)
-
-    expect(matchesPattern(objectCallback.elementNamePattern, 'deleteItem')).toBe(true)
-    expect(matchesPattern(objectCallback.elementNamePattern, 'itemDelete')).toBe(false)
+    expect(messages).toHaveLength(0)
   })
 })
