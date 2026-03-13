@@ -90,4 +90,39 @@ describe('perfectionist config works on real linted code', () => {
 
     expect(messages).toHaveLength(0)
   })
+
+  it('passes when imports are grouped in expected order', async () => {
+    const messages = await lintWithRule({
+      ruleName: 'perfectionist/sort-imports',
+      filename: 'imports.ts',
+      code: `
+        import axios from 'axios'
+        import React from 'react'
+
+        import { api } from '@nimbus/api'
+
+        import './styles.css'
+
+        import logo from './logo.svg'
+      `,
+    })
+
+    expect(messages).toHaveLength(0)
+  })
+
+  it('reports when monorepo import is placed before react/external group', async () => {
+    const messages = await lintWithRule({
+      ruleName: 'perfectionist/sort-imports',
+      filename: 'imports.ts',
+      code: `
+        import { api } from '@nimbus/api'
+
+        import axios from 'axios'
+        import React from 'react'
+      `,
+    })
+
+    expect(messages.length).toBeGreaterThan(0)
+    expect(messages[0].ruleId).toBe('perfectionist/sort-imports')
+  })
 })
