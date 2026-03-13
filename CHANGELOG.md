@@ -1,5 +1,11 @@
 # Changelog
 
+## [5.0.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v5.0.3...v5.0.4) (2026-03-13)
+
+### CI/CD
+
+* :ferris_wheel: change registry ([af3e989](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/af3e9896cb18c0d974b72e23dafd33f4ef6decdb))
+
 ## [5.0.3](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v5.0.1...v5.0.3) (2026-03-13)
 
 ### Documentations
