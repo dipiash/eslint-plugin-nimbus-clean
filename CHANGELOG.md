@@ -1,5 +1,17 @@
 # Changelog
 
+## [5.0.5](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v5.0.4...v5.0.5) (2026-03-14)
+
+### Tests
+
+* **eslint:** add vitest coverage for perfectionist patterns ([f26a165](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/f26a165d0eee902ee083cd77865d9a32757373f6))
+* **eslint:** cover import grouping in perfectionist tests ([9e995b5](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/9e995b50a78f540bf2974f2c37e70b20c4de03e2))
+* **eslint:** lint real code in perfectionist regression tests ([ed66f58](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/ed66f58b84010ae94c96e6386d9bdcbc31da3e19))
+
+### CI/CD
+
+* **eslint:** run vitest suite in ci workflow ([d2152d4](https://github.com/dipiash/eslint-plugin-nimbus-clean/commit/d2152d4d15f9f55d57487bf54297771bb6e0e42d))
+
 ## [5.0.4](https://github.com/dipiash/eslint-plugin-nimbus-clean/compare/v5.0.3...v5.0.4) (2026-03-13)
 
 ### CI/CD
